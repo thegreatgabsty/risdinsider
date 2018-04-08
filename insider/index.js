@@ -1,4 +1,4 @@
-var Living = document.getElementById('Living');
+	var Living = document.getElementById('Living');
 var Making = document.getElementById('Making');
 var Academic = document.getElementById('Academic');
 var Leisure = document.getElementById('Leisure');
