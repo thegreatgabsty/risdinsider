@@ -20,12 +20,13 @@ body {
 	transition-duration: 0.2s;
 }
 
-
+	
 .category2,
 .category3,
 .category4,
 .category5 {
 	left: 100%;
+	visibility: hidden;
 }
 /*
 .category2 {

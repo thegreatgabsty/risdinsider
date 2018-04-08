@@ -207,6 +207,6 @@ var Brown_Recreational_Facilities = document.getElementById('Brown_Recreational_
 for (let i = 0; i < category1_page.length; i++) {
 	category1_page[i].addEventListener('click', function () {
 		category2_page[i].style.visibility = "visible";
-		category2_page[i].style.left = "20%;
+		category2_page[i].style.left = "20%";
 	})
 }
