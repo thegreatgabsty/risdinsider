@@ -4,6 +4,10 @@ body {
 	padding: 0;
 }
 
+.title {
+	font-family: 'Karla', sans-serif;
+}
+
 .category1,
 .category2,
 .category3,
@@ -42,6 +46,7 @@ body {
 */
 
 li{
+	font-family: 'Karla', sans-serif;
 	list-style-type: none;
 	cursor: pointer;
 	width:150px;
