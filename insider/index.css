@@ -20,6 +20,14 @@ body {
 	transition-duration: 0.2s;
 }
 
+.category1-icon {
+	width:10%;
+	height:auto;
+}
+#category1-items {
+	/* text-align:center; */
+}
+
 
 .category2,
 .category3,
