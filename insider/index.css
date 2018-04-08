@@ -9,6 +9,8 @@ body {
 
 .title {
 	font-family: 'Karla', sans-serif;
+	font-size:30px;
+	padding:2% 0% 0% 2%;
 }
 
 .category1 {
@@ -31,6 +33,7 @@ body {
 
 				#living {
 					margin-bottom:2%;
+			
 				}
 				#making {
 					margin-bottom:2%;
