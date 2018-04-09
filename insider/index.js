@@ -264,6 +264,8 @@
 
 // Column1 
 
+
+
 // Clicking Living
 	var categoryc1a_trigger = "1";
 
@@ -393,7 +395,10 @@
 			
 			categoryc2_Living_trigger_a = "2";
 
-			Food.style.color = "#FF2F6D";
+			// Food.style.color = "#FF2F6D";
+			// Housing.style.color = "black";
+			// Food.style.backgroundColor = "#FF2F6D";
+			// Food.style.color = "white";
 
 		} else if (categoryc2_Living_trigger_a == "2") {
 			category3_Living_page[0].style.visibility = "visible";
@@ -402,6 +407,25 @@
 		}
 
 	})
+
+		//jquery i guess
+
+				var livingSelector = '#Living_page li';
+				$(livingSelector).on('click', function() {
+					$(livingSelector).removeClass('active');
+					$(this).addClass('active');
+				})
+
+						var foodSelector = '#Food_page li';
+						$(foodSelector).on('click', function() {
+							$(foodSelector).removeClass('active');
+							$(this).addClass('active');
+						})
+								var diningHallSelector = '#Dining_halls_page li';
+								$(diningHallSelector).on('click', function() {
+									$(diningHallSelector).removeClass('active');
+									$(this).addClass('active');
+								})
 
 
 // Clicking Housing
@@ -415,6 +439,10 @@
 				categoryc2_Living_trigger_a = "1";
 				categoryc2_Living_trigger_c = "1";
 			}
+
+			// Food.style.color = "black";
+			// Housing.style.color = "#FF2F6D";
+
 			category3_Living_page[1].style.visibility = "visible";
 			category3_Living_page[1].style.left = "40%";
 
