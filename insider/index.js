@@ -1018,6 +1018,159 @@
 	})
 
 
+	// Clicking Buy Materials
+	var category2_Making_trigger_b = "1";
+
+	category2_Making_button[1].addEventListener('click', function () {
+		if (category2_Making_trigger_b == "1") {
+			for (let i = 0; i < category2_Making_button.length; i++) {
+				category3b_page[i].style.visibility = "hidden";
+				category3b_page[i].style.left = "100%";
+				// category2_Making_trigger_a = "1";
+				// category2_Making_trigger_b = "1";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
+			// category3_Making_page[0].style.visibility = "visible";
+			// category3_Making_page[0].style.left = "40%";
+				category3b_page[1].style.visibility = "visible";
+				category3b_page[1].style.left = "40%";
+			
+
+			category2_Making_trigger_b = "2";
+
+		} else if (category2_Making_trigger_b == "2") {
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
+			category3b_page[1].style.visibility = "visible";
+			category3b_page[1].style.left = "100%";
+			category2_Making_trigger_b = "1";
+		}
+
+	})
+
+	// Clicking Buy Materials
+	var category2_Making_trigger_c = "1";
+
+	category2_Making_button[2].addEventListener('click', function () {
+		if (category2_Making_trigger_c == "1") {
+			for (let i = 0; i < category2_Making_button.length; i++) {
+				category3b_page[i].style.visibility = "hidden";
+				category3b_page[i].style.left = "100%";
+				// category2_Making_trigger_a = "1";
+				// category2_Making_trigger_b = "1";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
+			// category3_Making_page[0].style.visibility = "visible";
+			// category3_Making_page[0].style.left = "40%";
+				category3b_page[2].style.visibility = "visible";
+				category3b_page[2].style.left = "40%";
+			
+
+			category2_Making_trigger_c = "2";
+
+		} else if (category2_Making_trigger_c == "2") {
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
+			category3b_page[2].style.visibility = "visible";
+			category3b_page[2].style.left = "100%";
+			category2_Making_trigger_c = "1";
+		}
+
+	})
+
+	// Clicking Buy Materials
+	var category2_Making_trigger_d = "1";
+
+	category2_Making_button[3].addEventListener('click', function () {
+		if (category2_Making_trigger_d == "1") {
+			for (let i = 0; i < category2_Making_button.length; i++) {
+				category3b_page[i].style.visibility = "hidden";
+				category3b_page[i].style.left = "100%";
+				// category2_Making_trigger_a = "1";
+				// category2_Making_trigger_b = "1";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
+			// category3_Making_page[0].style.visibility = "visible";
+			// category3_Making_page[0].style.left = "40%";
+				category3b_page[3].style.visibility = "visible";
+				category3b_page[3].style.left = "40%";
+			
+
+			category2_Making_trigger_d = "2";
+
+		} else if (category2_Making_trigger_d == "2") {
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
+			category3b_page[3].style.visibility = "visible";
+			category3b_page[3].style.left = "100%";
+			category2_Making_trigger_d = "1";
+		}
+
+	})
+
 
 
 
@@ -1282,6 +1435,7 @@
 		}
 
 	})
+	
 
 
 	// Dining halls - Met
