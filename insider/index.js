@@ -1,20 +1,26 @@
+	
+//background
 	var background = document.getElementById('category1');
 
 
+//Category1
 	var Living = document.getElementById('Living');
 	var Making = document.getElementById('Making');
 	var Academics = document.getElementById('Academics');
 	var Leisure = document.getElementById('Leisure');
 
+//Category1 button
 	var category1_button = [Living, Making, Academics, Leisure];
 
 
 
+//Category1->2 page
 	var Living_page = document.getElementById('Living_page');
 	var Making_page = document.getElementById('Making_page');
 	var Academic_page = document.getElementById('Academic_page');
 	var Leisure_page = document.getElementById('Leisure_page');
 
+//Category1->2 page array
 	var category2_page = [Living_page, Making_page, Academic_page, Leisure_page];
 
 
@@ -46,10 +52,6 @@
 	var Working_out = document.getElementById('Working_out');
 
 	var category2_Living_button_d = [Galleries, Inspiration, Working_out];
-
-
-
-
 
 
 
@@ -116,7 +118,23 @@
 	var Carr_Haus = document.getElementById('Carr_Haus');
 	var Food_hacks = document.getElementById('Food_hacks');
 
-	var category4_Dining_halls = [Portfolio, Met, Watermark, Jolly_Roger, Bolt, Carr_Haus, Food_hacks];
+	var category4_Dining_halls_button = [Portfolio, Met, Watermark, Jolly_Roger, Bolt, Carr_Haus, Food_hacks];
+
+
+	var Portfolio_page = document.getElementById('Portfolio_page');
+
+	var Met_page = document.getElementById('Met_page');
+
+	var Watermark_page = document.getElementById('Watermark_page');
+
+	var Jolly_Roger_page = document.getElementById('Jolly_Roger_page');
+
+	var Bolt_page = document.getElementById('Bolt_page');
+
+	var category4_Dining_halls_page = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page];
+
+
+
 
 
 
@@ -262,148 +280,160 @@
 
 
 
-// Column1 
+	// Column1 
 
+
+
+<<<<<<< Updated upstream
 
 
 // Clicking Living
 	var categoryc1a_trigger = "1";
+=======
+	// Clicking Living
+	var category1_trigger_a = "1";
+>>>>>>> Stashed changes
 
 	category1_button[0].addEventListener('click', function () {
-		if (categoryc1a_trigger == "1") {
+		if (category1_trigger_a == "1") {
 			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1b_trigger = "1";
-				categoryc1c_trigger = "1";
-				categoryc1d_trigger = "1";
+				category1_trigger_b = "1";
+				category1_trigger_c = "1";
+				category1_trigger_d = "1";
 			}
 			category2_page[0].style.visibility = "visible";
 			category2_page[0].style.left = "20%";
-			categoryc1a_trigger = "2";
+			category1_trigger_a = "2";
 
 			background.style.backgroundColor = "#FF2F6D"
-		} else if (categoryc1a_trigger == "2") {
+		} else if (category1_trigger_a == "2") {
 			category2_page[0].style.visibility = "visible";
 			category2_page[0].style.left = "100%";
-			categoryc1a_trigger = "1";
+			category1_trigger_a = "1";
 		}
 	})
 
 
 
-// Clicking Making
-	var categoryc1b_trigger = "1";
+	// Clicking Making
+	var category1_trigger_b = "1";
 
 	category1_button[1].addEventListener('click', function () {
-		if (categoryc1b_trigger == "1") {
+		if (category1_trigger_b == "1") {
 			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1a_trigger = "1";
-				categoryc1c_trigger = "1";
-				categoryc1d_trigger = "1";
+				category1_trigger_a = "1";
+				category1_trigger_c = "1";
+				category1_trigger_d = "1";
 			}
 			category2_page[1].style.visibility = "visible";
 			category2_page[1].style.left = "20%";
-			categoryc1b_trigger = "2";
+			category1_trigger_b = "2";
 
 			background.style.backgroundColor = "#BAE800"
-		} else if (categoryc1b_trigger == "2") {
+		} else if (category1_trigger_b == "2") {
 			category2_page[1].style.visibility = "visible";
 			category2_page[1].style.left = "100%";
-			categoryc1b_trigger = "1";
+			category1_trigger_b = "1";
 		}
 	})
 
 
 
-// Clicking Academic
-	var categoryc1c_trigger = "1";
+	// Clicking Academic
+	var category1_trigger_c = "1";
 
 	category1_button[2].addEventListener('click', function () {
-		if (categoryc1c_trigger == "1") {
+		if (category1_trigger_c == "1") {
 			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1a_trigger = "1";
-				categoryc1b_trigger = "1";
-				categoryc1d_trigger = "1";
+				category1_trigger_a = "1";
+				category1_trigger_b = "1";
+				category1_trigger_d = "1";
 			}
 			category2_page[2].style.visibility = "visible";
 			category2_page[2].style.left = "20%";
-			categoryc1c_trigger = "2";
+			category1_trigger_c = "2";
 
 			background.style.backgroundColor = "#FFB800"
-		} else if (categoryc1c_trigger == "2") {
+		} else if (category1_trigger_c == "2") {
 			category2_page[2].style.visibility = "visible";
 			category2_page[2].style.left = "100%";
-			categoryc1c_trigger = "1";
+			category1_trigger_c = "1";
 		}
 	})
 
 
 
-// Clicking Leisure
-	var categoryc1d_trigger = "1";
+	// Clicking Leisure
+	var category1_trigger_d = "1";
 
 	category1_button[3].addEventListener('click', function () {
-		if (categoryc1d_trigger == "1") {
+		if (category1_trigger_d == "1") {
 			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1a_trigger = "1";
-				categoryc1b_trigger = "1";
-				categoryc1c_trigger = "1";
+				category1_trigger_a = "1";
+				category1_trigger_b = "1";
+				category1_trigger_c = "1";
 			}
 			category2_page[3].style.visibility = "visible";
 			category2_page[3].style.left = "20%";
-			categoryc1d_trigger = "2";
+			category1_trigger_d = "2";
 
 			background.style.backgroundColor = "#38E0D6"
-		} else if (categoryc1d_trigger == "2") {
+		} else if (category1_trigger_d == "2") {
 			category2_page[3].style.visibility = "visible";
 			category2_page[3].style.left = "100%";
-			categoryc1d_trigger = "1";
+			category1_trigger_d = "1";
 		}
 	})
 
 
+	var category1_triggers = [category1_trigger_a, category1_trigger_b, category1_trigger_c, category1_trigger_d];
 
 
 
 
 
 
+	// Category 2
 
-// Category 2
-	
-	
-// Clicking Food
-	var categoryc2_Living_trigger_a = "1";
+
+	// Clicking Food
+	var category2_Living_trigger_a = "1";
 
 	category2_Living_button_a[0].addEventListener('click', function () {
-		if (categoryc2_Living_trigger_a == "1") {
+		if (category2_Living_trigger_a == "1") {
 			for (let i = 0; i < category2_Living_button_a.length; i++) {
 				category3_Living_page[i].style.visibility = "hidden";
 				category3_Living_page[i].style.left = "100%";
-				categoryc2_Living_trigger_b = "1";
-				categoryc2_Living_trigger_c = "1";
+				category2_Living_trigger_b = "1";
+				category2_Living_trigger_c = "1";
 			}
 			category3_Living_page[0].style.visibility = "visible";
 			category3_Living_page[0].style.left = "40%";
-			
-			categoryc2_Living_trigger_a = "2";
 
+			category2_Living_trigger_a = "2";
+
+<<<<<<< Updated upstream
 			// Food.style.color = "#FF2F6D";
 			// Housing.style.color = "black";
 			// Food.style.backgroundColor = "#FF2F6D";
 			// Food.style.color = "white";
+=======
+			Food.style.color = "#FF2F6D";
+			
+>>>>>>> Stashed changes
 
-		} else if (categoryc2_Living_trigger_a == "2") {
+		} else if (category2_Living_trigger_a == "2") {
 			category3_Living_page[0].style.visibility = "visible";
 			category3_Living_page[0].style.left = "100%";
-			categoryc2_Living_trigger_a = "1";
+			category2_Living_trigger_a = "1";
 		}
 
 	})
@@ -428,16 +458,16 @@
 								})
 
 
-// Clicking Housing
-	var categoryc2_Living_trigger_b = "1";
+	// Clicking Housing
+	var category2_Living_trigger_b = "1";
 
 	category2_Living_button_a[1].addEventListener('click', function () {
-		if (categoryc2_Living_trigger_b == "1") {
+		if (category2_Living_trigger_b == "1") {
 			for (let i = 0; i < category2_Living_button_a.length; i++) {
 				category3_Living_page[i].style.visibility = "hidden";
 				category3_Living_page[i].style.left = "100%";
-				categoryc2_Living_trigger_a = "1";
-				categoryc2_Living_trigger_c = "1";
+				category2_Living_trigger_a = "1";
+				category2_Living_trigger_c = "1";
 			}
 
 			// Food.style.color = "black";
@@ -446,37 +476,37 @@
 			category3_Living_page[1].style.visibility = "visible";
 			category3_Living_page[1].style.left = "40%";
 
-			categoryc2_Living_trigger_b = "2";
+			category2_Living_trigger_b = "2";
 
-		} else if (categoryc2Food_b_button == "2") {
+		} else if (category2_Living_trigger_b == "2") {
 			category3_Living_page[1].style.visibility = "visible";
 			category3_Living_page[1].style.left = "100%";
-			categoryc2_Living_trigger_b = "1";
+			category2_Living_trigger_b = "1";
 		}
 
 	})
 
 
-// Clicking Work studies
-	var categoryc2_Living_trigger_c = "1";
+	// Clicking Work studies
+	var category2_Living_trigger_c = "1";
 
 	category2_Living_button_a[2].addEventListener('click', function () {
-		if (categoryc2_Living_trigger_c == "1") {
+		if (category2_Living_trigger_c == "1") {
 			for (let i = 0; i < category2_Living_button_a.length; i++) {
 				category3_Living_page[i].style.visibility = "hidden";
 				category3_Living_page[i].style.left = "100%";
-				categoryc2_Living_trigger_a = "1";
-				categoryc2_Living_trigger_b = "1";
+				category2_Living_trigger_a = "1";
+				category2_Living_trigger_b = "1";
 			}
 			category3_Living_page[2].style.visibility = "visible";
 			category3_Living_page[2].style.left = "40%";
 
-			categoryc2_Living_trigger_c = "2";
+			category2_Living_trigger_c = "2";
 
-		} else if (categoryc2_Living_trigger_c == "2") {
+		} else if (category2_Living_trigger_c == "2") {
 			category3_Living_page[2].style.visibility = "visible";
 			category3_Living_page[2].style.left = "100%";
-			categoryc2_Living_trigger_c = "1";
+			category2_Living_trigger_c = "1";
 		}
 
 	})
@@ -487,152 +517,356 @@
 
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-// Category 3
-	
-	
-// Clicking Dining halls
-		var category3_Food_a_trigger = "1";
 
-		category3_Food_button[0].addEventListener('click', function () {
-			if (category3_Food_a_trigger == "1") {
-				for (let i = 0; i < category3_Food_button.length; i++) {
-					category4_Food_page[i].style.visibility = "hidden";
-					category4_Food_page[i].style.left = "100%";
-					category3_Food_b_trigger = "1";
-					category3_Food_c_trigger = "1";
-					category3_Food_d_trigger = "1";
-					category3_Food_e_trigger = "1";
-				}
-				category4_Food_page[0].style.visibility = "visible";
-				category4_Food_page[0].style.left = "60%";
-	
-				category3_Food_a_trigger = "2";
-	
-			} else if (category3_Food_a_trigger == "2") {
-				category4_Food_page[0].style.visibility = "visible";
-				category4_Food_page[0].style.left = "100%";
-				category3_Food_a_trigger = "1";
-			}
-	
-		})
 
-		
-// Clicking Meal plans
-		var category3_Food_b_trigger = "1";
+	// Category 3
 
-		category3_Food_button[1].addEventListener('click', function () {
-			if (category3_Food_b_trigger == "1") {
-				for (let i = 0; i < category3_Food_button.length; i++) {
-					category4_Food_page[i].style.visibility = "hidden";
-					category4_Food_page[i].style.left = "100%";
-					category3_Food_a_trigger = "1";
-					category3_Food_c_trigger = "1";
-					category3_Food_d_trigger = "1";
-					category3_Food_e_trigger = "1";
-				}
-				category4_Food_page[1].style.visibility = "visible";
-				category4_Food_page[1].style.left = "60%";
-	
-				category3_Food_b_trigger = "2";
-	
-			} else if (category3_Food_b_trigger == "2") {
-				category4_Food_page[1].style.visibility = "visible";
-				category4_Food_page[1].style.left = "100%";
+
+	// Clicking Dining halls
+	var category3_Food_a_trigger = "1";
+
+	category3_Food_button[0].addEventListener('click', function () {
+		if (category3_Food_a_trigger == "1") {
+			for (let i = 0; i < category3_Food_button.length; i++) {
+				category4_Food_page[i].style.visibility = "hidden";
+				category4_Food_page[i].style.left = "100%";
 				category3_Food_b_trigger = "1";
-			}
-	
-		})
-
-		
-// Clicking Cool streets
-		var category3_Food_c_trigger = "1";
-
-		category3_Food_button[2].addEventListener('click', function () {
-			if (category3_Food_c_trigger == "1") {
-				for (let i = 0; i < category3_Food_button.length; i++) {
-					category4_Food_page[i].style.visibility = "hidden";
-					category4_Food_page[i].style.left = "100%";
-					category3_Food_a_trigger = "1";
-					category3_Food_b_trigger = "1";
-					category3_Food_d_trigger = "1";
-					category3_Food_e_trigger = "1";
-				}
-				category4_Food_page[2].style.visibility = "visible";
-				category4_Food_page[2].style.left = "60%";
-	
-				category3_Food_c_trigger = "2";
-	
-			} else if (category3_Food_c_trigger == "2") {
-				category4_Food_page[2].style.visibility = "visible";
-				category4_Food_page[2].style.left = "100%";
 				category3_Food_c_trigger = "1";
-			}
-	
-		})
-	
-		
-// Clicking Vending machines
-		var category3_Food_d_trigger = "1";
-
-		category3_Food_button[3].addEventListener('click', function () {
-			if (category3_Food_d_trigger == "1") {
-				for (let i = 0; i < category3_Food_button.length; i++) {
-					category4_Food_page[i].style.visibility = "hidden";
-					category4_Food_page[i].style.left = "100%";
-					category3_Food_a_trigger = "1";
-					category3_Food_b_trigger = "1";
-					category3_Food_c_trigger = "1";
-					category3_Food_e_trigger = "1";
-				}
-				category4_Food_page[3].style.visibility = "visible";
-				category4_Food_page[3].style.left = "60%";
-	
-				category3_Food_d_trigger = "2";
-	
-			} else if (category3_Food_d_trigger == "2") {
-				category4_Food_page[3].style.visibility = "visible";
-				category4_Food_page[3].style.left = "100%";
 				category3_Food_d_trigger = "1";
-			}
-	
-		})
-	
-
-// Clicking Grocery shopping
-		var category3_Food_e_trigger = "1";
-
-		category3_Food_button[4].addEventListener('click', function () {
-			if (category3_Food_e_trigger == "1") {
-
-
-				for (let i = 0; i < category3_Food_button.length; i++) {
-					category4_Food_page[i].style.visibility = "hidden";
-					category4_Food_page[i].style.left = "100%";
-					category3_Food_a_trigger = "1";
-					category3_Food_b_trigger = "1";
-					category3_Food_c_trigger = "1";
-					category3_Food_d_trigger = "1";
-				}
-				category4_Food_page[4].style.visibility = "visible";
-				category4_Food_page[4].style.left = "60%";
-	
-				category3_Food_e_trigger = "2";
-	
-			} else if (category3_Food_e_trigger == "2") {
-				category4_Food_page[4].style.visibility = "visible";
-				category4_Food_page[4].style.left = "100%";
 				category3_Food_e_trigger = "1";
 			}
-	
-		})
+			category4_Food_page[0].style.visibility = "visible";
+			category4_Food_page[0].style.left = "60%";
+
+			category3_Food_a_trigger = "2";
+
+		} else if (category3_Food_a_trigger == "2") {
+			category4_Food_page[0].style.visibility = "visible";
+			category4_Food_page[0].style.left = "100%";
+			category3_Food_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Meal plans
+	var category3_Food_b_trigger = "1";
+
+	category3_Food_button[1].addEventListener('click', function () {
+		if (category3_Food_b_trigger == "1") {
+			for (let i = 0; i < category3_Food_button.length; i++) {
+				category4_Food_page[i].style.visibility = "hidden";
+				category4_Food_page[i].style.left = "100%";
+				category3_Food_a_trigger = "1";
+				category3_Food_c_trigger = "1";
+				category3_Food_d_trigger = "1";
+				category3_Food_e_trigger = "1";
+			}
+			category4_Food_page[1].style.visibility = "visible";
+			category4_Food_page[1].style.left = "60%";
+
+			category3_Food_b_trigger = "2";
+
+		} else if (category3_Food_b_trigger == "2") {
+			category4_Food_page[1].style.visibility = "visible";
+			category4_Food_page[1].style.left = "100%";
+			category3_Food_b_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Cool streets
+	var category3_Food_c_trigger = "1";
+
+	category3_Food_button[2].addEventListener('click', function () {
+		if (category3_Food_c_trigger == "1") {
+			for (let i = 0; i < category3_Food_button.length; i++) {
+				category4_Food_page[i].style.visibility = "hidden";
+				category4_Food_page[i].style.left = "100%";
+				category3_Food_a_trigger = "1";
+				category3_Food_b_trigger = "1";
+				category3_Food_d_trigger = "1";
+				category3_Food_e_trigger = "1";
+			}
+			category4_Food_page[2].style.visibility = "visible";
+			category4_Food_page[2].style.left = "60%";
+
+			category3_Food_c_trigger = "2";
+
+		} else if (category3_Food_c_trigger == "2") {
+			category4_Food_page[2].style.visibility = "visible";
+			category4_Food_page[2].style.left = "100%";
+			category3_Food_c_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Vending machines
+	var category3_Food_d_trigger = "1";
+
+	category3_Food_button[3].addEventListener('click', function () {
+		if (category3_Food_d_trigger == "1") {
+			for (let i = 0; i < category3_Food_button.length; i++) {
+				category4_Food_page[i].style.visibility = "hidden";
+				category4_Food_page[i].style.left = "100%";
+				category3_Food_a_trigger = "1";
+				category3_Food_b_trigger = "1";
+				category3_Food_c_trigger = "1";
+				category3_Food_e_trigger = "1";
+			}
+			category4_Food_page[3].style.visibility = "visible";
+			category4_Food_page[3].style.left = "60%";
+
+			category3_Food_d_trigger = "2";
+
+		} else if (category3_Food_d_trigger == "2") {
+			category4_Food_page[3].style.visibility = "visible";
+			category4_Food_page[3].style.left = "100%";
+			category3_Food_d_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Grocery shopping
+	var category3_Food_e_trigger = "1";
+
+	category3_Food_button[4].addEventListener('click', function () {
+		if (category3_Food_e_trigger == "1") {
+
+
+			for (let i = 0; i < category3_Food_button.length; i++) {
+				category4_Food_page[i].style.visibility = "hidden";
+				category4_Food_page[i].style.left = "100%";
+				category3_Food_a_trigger = "1";
+				category3_Food_b_trigger = "1";
+				category3_Food_c_trigger = "1";
+				category3_Food_d_trigger = "1";
+			}
+			category4_Food_page[4].style.visibility = "visible";
+			category4_Food_page[4].style.left = "60%";
+
+			category3_Food_e_trigger = "2";
+
+		} else if (category3_Food_e_trigger == "2") {
+			category4_Food_page[4].style.visibility = "visible";
+			category4_Food_page[4].style.left = "100%";
+			category3_Food_e_trigger = "1";
+		}
+
+	})
 
 
 
+
+
+
+
+
+
+	// Category 4
+
+
+	// Clicking Portfolio
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[0].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_d_trigger = "1";
+				category4_Dining_halls_e_trigger = "1";
+				category4_Dining_halls_f_trigger = "1";
+				category4_Dining_halls_g_trigger = "1";
+			}
+			category5_Dining_halls_page[0].style.visibility = "visible";
+			category5_Dining_halls_page[0].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[0].style.visibility = "visible";
+			category5_Dining_halls_page[0].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Met
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[1].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_d_trigger = "1";
+				category4_Dining_halls_e_trigger = "1";
+				category4_Dining_halls_f_trigger = "1";
+				category4_Dining_halls_g_trigger = "1";
+			}
+			category5_Dining_halls_page[1].style.visibility = "visible";
+			category5_Dining_halls_page[1].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[1].style.visibility = "visible";
+			category5_Dining_halls_page[1].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Watermark
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[2].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_d_trigger = "1";
+				category4_Dining_halls_e_trigger = "1";
+				category4_Dining_halls_f_trigger = "1";
+				category4_Dining_halls_g_trigger = "1";
+			}
+			category5_Dining_halls_page[2].style.visibility = "visible";
+			category5_Dining_halls_page[2].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[2].style.visibility = "visible";
+			category5_Dining_halls_page[2].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Jolly Roger
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[3].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_a_trigger = "1";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_e_trigger = "1";
+				category4_Dining_halls_f_trigger = "1";
+				category4_Dining_halls_g_trigger = "1";
+			}
+			category5_Dining_halls_page[3].style.visibility = "visible";
+			category5_Dining_halls_page[3].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[3].style.visibility = "visible";
+			category5_Dining_halls_page[3].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Bolt
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[4].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_a_trigger = "1";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_d_trigger = "1";
+				category4_Dining_halls_f_trigger = "1";
+				category4_Dining_halls_g_trigger = "1";
+			}
+			category5_Dining_halls_page[4].style.visibility = "visible";
+			category5_Dining_halls_page[4].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[4].style.visibility = "visible";
+			category5_Dining_halls_page[4].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Carr Haus
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[5].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_a_trigger = "1";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_d_trigger = "1";
+				category4_Dining_halls_e_trigger = "1";
+				category4_Dining_halls_g_trigger = "1";
+			}
+			category5_Dining_halls_page[5].style.visibility = "visible";
+			category5_Dining_halls_page[5].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[5].style.visibility = "visible";
+			category5_Dining_halls_page[5].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
+
+
+	// Clicking Food hacks
+	var category4_Dining_halls_a_trigger = "1";
+
+	category4_Dining_halls_button[6].addEventListener('click', function () {
+		if (category4_Dining_halls_a_trigger == "1") {
+			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
+				category5_Dining_halls_page[i].style.visibility = "hidden";
+				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_a_trigger = "1";
+				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_c_trigger = "1";
+				category4_Dining_halls_d_trigger = "1";
+				category4_Dining_halls_e_trigger = "1";
+				category4_Dining_halls_f_trigger = "1";
+			}
+			category5_Dining_halls_page[6].style.visibility = "visible";
+			category5_Dining_halls_page[6].style.left = "60%";
+
+			category4_Dining_halls_a_trigger = "2";
+
+		} else if (category4_Dining_halls_a_trigger == "2") {
+			category5_Dining_halls_page[6].style.visibility = "visible";
+			category5_Dining_halls_page[6].style.left = "100%";
+			category4_Dining_halls_a_trigger = "1";
+		}
+
+	})
