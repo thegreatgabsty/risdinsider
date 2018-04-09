@@ -1,9 +1,12 @@
+	var background = document.getElementById('category1');
+
+
 	var Living = document.getElementById('Living');
 	var Making = document.getElementById('Making');
-	var Academic = document.getElementById('Academic');
+	var Academics = document.getElementById('Academics');
 	var Leisure = document.getElementById('Leisure');
 
-	var category1_page = [Living, Making, Academics, Leisure];
+	var category1_button = [Living, Making, Academics, Leisure];
 
 
 
@@ -20,39 +23,64 @@
 	var Housing = document.getElementById('Housing');
 	var Work_studies = document.getElementById('Work_studies');
 
+	var category2_Living_button_a = [Food, Housing, Work_studies];
+
+
 	var Buy_Material = document.getElementById('Buy_Material');
 	var Shops_and_labs = document.getElementById('Shops_and_labs');
 	var Equipment = document.getElementById('Equipment');
 	var Software = document.getElementById('Software');
 
+	var category2_Living_button_b = [Buy_Material, Shops_and_labs, Equipment, Software];
+
+
 	var Brown_classes = document.getElementById('Brown_classes');
 	var Lib_classes = document.getElementById('Lib_classes');
 	var Concentrations = document.getElementById('Concentrations');
+
+	var category2_Living_button_c = [Brown_classes, Lib_classes, Concentrations, Galleries, Inspiration, Working_out];
+
 
 	var Galleries = document.getElementById('Galleries');
 	var Inspiration = document.getElementById('Inspiration');
 	var Working_out = document.getElementById('Working_out');
 
-	var category2 = [Food, Housing, Work_studies, Buy_Material, Shops_and_labs, Equipment, Software, Brown_classes, Lib_classes, Concentrations, Galleries, Inspiration, Working_out];
+	var category2_Living_button_d = [Galleries, Inspiration, Working_out];
+
+
+
+
 
 
 
 	var Food_page = document.getElementById('Food_page');
 	var Housing_page = document.getElementById('Housing_page');
 	var Work_Studies_page = document.getElementById('Work_Studies_page');
+
+	var category3_Living_page = [Food_page, Housing_page, Work_Studies_page];
+
+
 	var Buy_Materials_page = document.getElementById('Buy_Materials_page');
 	var Shops_and_labs_page = document.getElementById('Shops_and_labs_page');
 	var Equipment_page = document.getElementById('Equipment_page');
 	var Software_Subscription_page = document.getElementById('Software_Subscription_page');
+
+	var category3b_page = [Buy_Materials_page, Shops_and_labs_page, Equipment_page, Software_Subscription_page];
+
+
 	var Brown_class_page = document.getElementById('Brown_class_page');
 	var Lib_classes_page = document.getElementById('Lib_classes_page');
 	var Concentrations_page = document.getElementById('Concentrations_page');
+
+	var category3c_page = [Brown_class_page, Lib_classes_page, Concentrations_page];
+
+
 	var Galleries_page = document.getElementById('Galleries_page');
 	var Inspiration_page = document.getElementById('Inspiration_page');
 	var Clubs_page = document.getElementById('Clubs_page');
 	var Working_Out_page = document.getElementById('Working_Out_page');
 
-	var category3_page = [Food_page, Housing_page, Work_Studies_page, Buy_Materials_page, Shops_and_labs_page, Equipment_page, Software_Subscription_page, Brown_class_page, Lib_classes_page, Concentrations_page, Galleries_page, Inspiration_page, Working_Out_page];
+	var category3d_page = [Galleries_page, Inspiration_page, Working_Out_page];
 
 
 
@@ -62,7 +90,33 @@
 	var Vending_machines = document.getElementById('Vending_machines');
 	var Grocery_shopping = document.getElementById('Grocery_shopping');
 
-	var category3_Food_page = [Dining_halls, Meal_plans, Cool_streets, Vending_machines, Grocery_shopping];
+	var category3_Food_button = [Dining_halls, Meal_plans, Cool_streets, Vending_machines, Grocery_shopping];
+
+
+
+	var Dining_halls_page = document.getElementById('Dining_halls_page');
+
+	var Meal_plans_page = document.getElementById('Meal_plans_page');
+
+	var Cool_streets_page = document.getElementById('Cool_streets_page');
+
+	var Vending_machines_page = document.getElementById('Vending_machines_page');
+
+	var Grocery_shopping_page = document.getElementById('Grocery_shopping_page');
+
+	var category4_Food_page = [Dining_halls_page, Meal_plans_page, Cool_streets_page, Vending_machines_page, Grocery_shopping_page];
+
+
+
+	var Portfolio = document.getElementById('Portflio');
+	var Met = document.getElementById('Met');
+	var Watermark = document.getElementById('Watermark');
+	var Jolly_Roger = document.getElementById('Jolly_Roger');
+	var Bolt = document.getElementById('Bolt');
+	var Carr_Haus = document.getElementById('Carr_Haus');
+	var Food_hacks = document.getElementById('Food_hacks');
+
+	var category4_Dining_halls = [Portfolio, Met, Watermark, Jolly_Roger, Bolt, Carr_Haus, Food_hacks];
 
 
 
@@ -206,127 +260,332 @@
 
 
 
-	//	var category2_trigger = "c1a";
-	//
-	//
-	//	for (let i = 0; i < category1_page.length; i++) {
-	//		category1_page[i].addEventListener('click', function () {
-	//			if (category2_trigger == "c1a") {
-	//				category2_page[i].style.visibility = "visible";
-	//				category2_page[i].style.left = "20%";
-	//				category2_trigger = "c1b";
-	//			} else if (category2_trigger == "c1b") {
-	//				category2_page[i].style.visibility = "visible";
-	//				category2_page[i].style.left = "100%";
-	//				category2_trigger = "c1a";
-	//			}
-	//		})
-	//	}
 
 
 
 
 
+	var categoryc1a_trigger = "1";
 
-
-
-
-
-
-
-
-
-
-
-
-
-	var categoryc1a_button = "1";
-
-	category1_page[0].addEventListener('click', function () {
-		if (categoryc1a_button == "1") {
-			for (let i = 0; i < category1_page.length; i++) {
+	category1_button[0].addEventListener('click', function () {
+		if (categoryc1a_trigger == "1") {
+			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc2a_button = "1";
-				categoryc3a_button = "1";
-				categoryc4a_button = "1";
+				categoryc1b_trigger = "1";
+				categoryc1c_trigger = "1";
+				categoryc1d_trigger = "1";
 			}
 			category2_page[0].style.visibility = "visible";
 			category2_page[0].style.left = "20%";
-			categoryc1a_button = "2";
-		} else if (categoryc1a_button == "2") {
+			categoryc1a_trigger = "2";
+
+			background.style.backgroundColor = "#FF2F6D"
+		} else if (categoryc1a_trigger == "2") {
 			category2_page[0].style.visibility = "visible";
 			category2_page[0].style.left = "100%";
-			categoryc1a_button = "1";
+			categoryc1a_trigger = "1";
 		}
 	})
 
-	
-	
-	var categoryc2a_button = "1";
 
-	category1_page[1].addEventListener('click', function () {
-		if (categoryc2a_button == "1") {
-			for (let i = 0; i < category1_page.length; i++) {
+
+	var categoryc1b_trigger = "1";
+
+	category1_button[1].addEventListener('click', function () {
+		if (categoryc1b_trigger == "1") {
+			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1a_button = "1";
-				categoryc3a_button = "1";
-				categoryc4a_button = "1";
-
+				categoryc1a_trigger = "1";
+				categoryc1c_trigger = "1";
+				categoryc1d_trigger = "1";
 			}
 			category2_page[1].style.visibility = "visible";
 			category2_page[1].style.left = "20%";
-			categoryc2a_button = "2";
-		} else if (categoryc2a_button == "2") {
+			categoryc1b_trigger = "2";
+
+			background.style.backgroundColor = "#BAE800"
+		} else if (categoryc1b_trigger == "2") {
 			category2_page[1].style.visibility = "visible";
 			category2_page[1].style.left = "100%";
-			categoryc2a_button = "1";
+			categoryc1b_trigger = "1";
 		}
 	})
 
-	
-	
-	var categoryc3a_button = "1";
 
-	category1_page[2].addEventListener('click', function () {
-		if (categoryc3a_button == "1") {
-			for (let i = 0; i < category1_page.length; i++) {
+
+	var categoryc1c_trigger = "1";
+
+	category1_button[2].addEventListener('click', function () {
+		if (categoryc1c_trigger == "1") {
+			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1a_button = "1";
-				categoryc2a_button = "1";
-				categoryc4a_button = "1";
+				categoryc1a_trigger = "1";
+				categoryc1b_trigger = "1";
+				categoryc1d_trigger = "1";
 			}
 			category2_page[2].style.visibility = "visible";
 			category2_page[2].style.left = "20%";
-			categoryc3a_button = "2";
-		} else if (categoryc3a_button == "2") {
+			categoryc1c_trigger = "2";
+
+			background.style.backgroundColor = "#FFB800"
+		} else if (categoryc1c_trigger == "2") {
 			category2_page[2].style.visibility = "visible";
 			category2_page[2].style.left = "100%";
-			categoryc3a_button = "1";
+			categoryc1c_trigger = "1";
 		}
 	})
 
-	
-	
-	var categoryc4a_button = "1";
 
-	category1_page[3].addEventListener('click', function () {
-		if (categoryc4a_button == "1") {
-			for (let i = 0; i < category1_page.length; i++) {
+
+	var categoryc1d_trigger = "1";
+
+	category1_button[3].addEventListener('click', function () {
+		if (categoryc1d_trigger == "1") {
+			for (let i = 0; i < category1_button.length; i++) {
 				category2_page[i].style.visibility = "hidden";
 				category2_page[i].style.left = "100%";
-				categoryc1a_button = "1";
-				categoryc2a_button = "1";
-				categoryc3a_button = "1";
+				categoryc1a_trigger = "1";
+				categoryc1b_trigger = "1";
+				categoryc1c_trigger = "1";
 			}
 			category2_page[3].style.visibility = "visible";
 			category2_page[3].style.left = "20%";
-			categoryc4a_button = "2";
-		} else if (categoryc4a_button == "2") {
+			categoryc1d_trigger = "2";
+
+			background.style.backgroundColor = "#38E0D6"
+		} else if (categoryc1d_trigger == "2") {
 			category2_page[3].style.visibility = "visible";
 			category2_page[3].style.left = "100%";
-			categoryc4a_button = "1";
+			categoryc1d_trigger = "1";
 		}
 	})
+
+
+
+
+
+
+
+
+
+	var categoryc2_Living_trigger_a = "1";
+
+	category2_Living_button_a[0].addEventListener('click', function () {
+		if (categoryc2_Living_trigger_a == "1") {
+			for (let i = 0; i < category2_Living_button_a.length; i++) {
+				category3_Living_page[i].style.visibility = "hidden";
+				category3_Living_page[i].style.left = "100%";
+				categoryc2_Living_trigger_b = "1";
+				categoryc2_Living_trigger_c = "1";
+			}
+			category3_Living_page[0].style.visibility = "visible";
+			category3_Living_page[0].style.left = "40%";
+
+			categoryc2_Living_trigger_a = "2";
+
+		} else if (categoryc2_Living_trigger_a == "2") {
+			category3_Living_page[0].style.visibility = "visible";
+			category3_Living_page[0].style.left = "100%";
+			categoryc2_Living_trigger_a = "1";
+		}
+
+	})
+
+
+
+	var categoryc2_Living_trigger_b = "1";
+
+	category2_Living_button_a[1].addEventListener('click', function () {
+		if (categoryc2_Living_trigger_b == "1") {
+			for (let i = 0; i < category2_Living_button_a.length; i++) {
+				category3_Living_page[i].style.visibility = "hidden";
+				category3_Living_page[i].style.left = "100%";
+				categoryc2_Living_trigger_a = "1";
+				categoryc2_Living_trigger_c = "1";
+			}
+			category3_Living_page[1].style.visibility = "visible";
+			category3_Living_page[1].style.left = "40%";
+
+			categoryc2_Living_trigger_b = "2";
+
+		} else if (categoryc2Food_b_button == "2") {
+			category3_Living_page[1].style.visibility = "visible";
+			category3_Living_page[1].style.left = "100%";
+			categoryc2_Living_trigger_b = "1";
+		}
+
+	})
+
+
+
+	var categoryc2_Living_trigger_c = "1";
+
+	category2_Living_button_a[2].addEventListener('click', function () {
+		if (categoryc2_Living_trigger_c == "1") {
+			for (let i = 0; i < category2_Living_button_a.length; i++) {
+				category3_Living_page[i].style.visibility = "hidden";
+				category3_Living_page[i].style.left = "100%";
+				categoryc2_Living_trigger_a = "1";
+				categoryc2_Living_trigger_b = "1";
+			}
+			category3_Living_page[2].style.visibility = "visible";
+			category3_Living_page[2].style.left = "40%";
+
+			categoryc2_Living_trigger_c = "2";
+
+		} else if (categoryc2_Living_trigger_c == "2") {
+			category3_Living_page[2].style.visibility = "visible";
+			category3_Living_page[2].style.left = "100%";
+			categoryc2_Living_trigger_c = "1";
+		}
+
+	})
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+		var category3_Food_a_trigger = "1";
+
+		category3_Food_button[0].addEventListener('click', function () {
+			if (category3_Food_a_trigger == "1") {
+				for (let i = 0; i < category3_Food_button.length; i++) {
+					category4_Food_page[i].style.visibility = "hidden";
+					category4_Food_page[i].style.left = "100%";
+					category3_Food_b_trigger = "1";
+					category3_Food_c_trigger = "1";
+					category3_Food_d_trigger = "1";
+					category3_Food_e_trigger = "1";
+				}
+				category4_Food_page[0].style.visibility = "visible";
+				category4_Food_page[0].style.left = "60%";
+	
+				category3_Food_a_trigger = "2";
+	
+			} else if (category3_Food_a_trigger == "2") {
+				category4_Food_page[0].style.visibility = "visible";
+				category4_Food_page[0].style.left = "100%";
+				category3_Food_a_trigger = "1";
+			}
+	
+		})
+
+
+		var category3_Food_b_trigger = "1";
+
+		category3_Food_button[1].addEventListener('click', function () {
+			if (category3_Food_b_trigger == "1") {
+				for (let i = 0; i < category3_Food_button.length; i++) {
+					category4_Food_page[i].style.visibility = "hidden";
+					category4_Food_page[i].style.left = "100%";
+					category3_Food_a_trigger = "1";
+					category3_Food_c_trigger = "1";
+					category3_Food_d_trigger = "1";
+					category3_Food_e_trigger = "1";
+				}
+				category4_Food_page[1].style.visibility = "visible";
+				category4_Food_page[1].style.left = "60%";
+	
+				category3_Food_b_trigger = "2";
+	
+			} else if (category3_Food_b_trigger == "2") {
+				category4_Food_page[1].style.visibility = "visible";
+				category4_Food_page[1].style.left = "100%";
+				category3_Food_b_trigger = "1";
+			}
+	
+		})
+		
+		
+		var category3_Food_c_trigger = "1";
+
+		category3_Food_button[2].addEventListener('click', function () {
+			if (category3_Food_c_trigger == "1") {
+				for (let i = 0; i < category3_Food_button.length; i++) {
+					category4_Food_page[i].style.visibility = "hidden";
+					category4_Food_page[i].style.left = "100%";
+					category3_Food_a_trigger = "1";
+					category3_Food_b_trigger = "1";
+					category3_Food_d_trigger = "1";
+					category3_Food_e_trigger = "1";
+				}
+				category4_Food_page[2].style.visibility = "visible";
+				category4_Food_page[2].style.left = "60%";
+	
+				category3_Food_c_trigger = "2";
+	
+			} else if (category3_Food_c_trigger == "2") {
+				category4_Food_page[2].style.visibility = "visible";
+				category4_Food_page[2].style.left = "100%";
+				category3_Food_c_trigger = "1";
+			}
+	
+		})
+	
+		
+		var category3_Food_d_trigger = "1";
+
+		category3_Food_button[3].addEventListener('click', function () {
+			if (category3_Food_d_trigger == "1") {
+				for (let i = 0; i < category3_Food_button.length; i++) {
+					category4_Food_page[i].style.visibility = "hidden";
+					category4_Food_page[i].style.left = "100%";
+					category3_Food_a_trigger = "1";
+					category3_Food_b_trigger = "1";
+					category3_Food_c_trigger = "1";
+					category3_Food_e_trigger = "1";
+				}
+				category4_Food_page[3].style.visibility = "visible";
+				category4_Food_page[3].style.left = "60%";
+	
+				category3_Food_d_trigger = "2";
+	
+			} else if (category3_Food_d_trigger == "2") {
+				category4_Food_page[3].style.visibility = "visible";
+				category4_Food_page[3].style.left = "100%";
+				category3_Food_d_trigger = "1";
+			}
+	
+		})
+	
+
+		var category3_Food_e_trigger = "1";
+
+		category3_Food_button[4].addEventListener('click', function () {
+			if (category3_Food_e_trigger == "1") {
+				for (let i = 0; i < category3_Food_button.length; i++) {
+					category4_Food_page[i].style.visibility = "hidden";
+					category4_Food_page[i].style.left = "100%";
+					category3_Food_a_trigger = "1";
+					category3_Food_b_trigger = "1";
+					category3_Food_c_trigger = "1";
+					category3_Food_d_trigger = "1";
+				}
+				category4_Food_page[4].style.visibility = "visible";
+				category4_Food_page[4].style.left = "60%";
+	
+				category3_Food_e_trigger = "2";
+	
+			} else if (category3_Food_e_trigger == "2") {
+				category4_Food_page[4].style.visibility = "visible";
+				category4_Food_page[4].style.left = "100%";
+				category3_Food_e_trigger = "1";
+			}
+	
+		})
+
+
+
