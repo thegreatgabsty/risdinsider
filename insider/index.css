@@ -79,8 +79,7 @@ body {
 
 
 .category2,
-.category3,
-.category4 {
+.category3 {
 	position: absolute;
 	background-color:white;
 	width: 100%;
@@ -89,6 +88,17 @@ body {
 	margin:8% 0% 0% 0%;
 	line-height:1.5;
 	
+}
+
+.category4 {
+	position: absolute;
+	background-color:white;
+	width: 30%;
+	height: 100%;
+	transition-duration: 0.2s;
+	margin:8% 0% 0% 0%;
+	line-height:1.5;
+	overflow-x: scroll;
 }
 
 .category5 {
@@ -134,10 +144,12 @@ li{
 	cursor: pointer;
 	width:150px;
 }
-.category5 h1 {
+.category5 h1,
+.category4 h1 {
 	font-family: 'Karla', sans-serif;
 }
-.category5 p {
+.category5 p,
+.category4 p {
 	font-family: 'Karla', sans-serif;
 	line-height:1.5;
 }
@@ -145,6 +157,7 @@ li{
 #Portfolio_page h1,
 #Met_page h1,
 #Watermark_page h1,
-#Jolly_Roger_page h1 {
+#Jolly_Roger_page h1,
+#Bolt_page h1 {
 	color: #FF2F6D;
 }
