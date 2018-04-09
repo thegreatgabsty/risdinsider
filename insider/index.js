@@ -262,9 +262,9 @@
 
 
 
+// Column1 
 
-
-
+// Clicking Living
 	var categoryc1a_trigger = "1";
 
 	category1_button[0].addEventListener('click', function () {
@@ -290,6 +290,7 @@
 
 
 
+// Clicking Making
 	var categoryc1b_trigger = "1";
 
 	category1_button[1].addEventListener('click', function () {
@@ -315,6 +316,7 @@
 
 
 
+// Clicking Academic
 	var categoryc1c_trigger = "1";
 
 	category1_button[2].addEventListener('click', function () {
@@ -340,6 +342,7 @@
 
 
 
+// Clicking Leisure
 	var categoryc1d_trigger = "1";
 
 	category1_button[3].addEventListener('click', function () {
@@ -371,6 +374,10 @@
 
 
 
+// Category 2
+	
+	
+// Clicking Food
 	var categoryc2_Living_trigger_a = "1";
 
 	category2_Living_button_a[0].addEventListener('click', function () {
@@ -383,7 +390,7 @@
 			}
 			category3_Living_page[0].style.visibility = "visible";
 			category3_Living_page[0].style.left = "40%";
-
+			
 			categoryc2_Living_trigger_a = "2";
 
 			Food.style.color = "#FF2F6D";
@@ -397,7 +404,7 @@
 	})
 
 
-
+// Clicking Housing
 	var categoryc2_Living_trigger_b = "1";
 
 	category2_Living_button_a[1].addEventListener('click', function () {
@@ -422,7 +429,7 @@
 	})
 
 
-
+// Clicking Work studies
 	var categoryc2_Living_trigger_c = "1";
 
 	category2_Living_button_a[2].addEventListener('click', function () {
@@ -460,6 +467,10 @@
 	
 	
 	
+// Category 3
+	
+	
+// Clicking Dining halls
 		var category3_Food_a_trigger = "1";
 
 		category3_Food_button[0].addEventListener('click', function () {
@@ -485,7 +496,8 @@
 	
 		})
 
-
+		
+// Clicking Meal plans
 		var category3_Food_b_trigger = "1";
 
 		category3_Food_button[1].addEventListener('click', function () {
@@ -510,8 +522,9 @@
 			}
 	
 		})
+
 		
-		
+// Clicking Cool streets
 		var category3_Food_c_trigger = "1";
 
 		category3_Food_button[2].addEventListener('click', function () {
@@ -538,6 +551,7 @@
 		})
 	
 		
+// Clicking Vending machines
 		var category3_Food_d_trigger = "1";
 
 		category3_Food_button[3].addEventListener('click', function () {
@@ -564,6 +578,7 @@
 		})
 	
 
+// Clicking Grocery shopping
 		var category3_Food_e_trigger = "1";
 
 		category3_Food_button[4].addEventListener('click', function () {
