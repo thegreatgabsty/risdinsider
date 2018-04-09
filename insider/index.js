@@ -1303,7 +1303,7 @@
 
 			category4_Dining_halls_d_trigger = "2";
 
-		} else if (category4_Dining_halls_a_trigger == "2") {
+		} else if (category4_Dining_halls_d_trigger == "2") {
 			category5_Dining_halls_page[3].style.visibility = "visible";
 			category5_Dining_halls_page[3].style.left = "100%";
 			category4_Dining_halls_d_trigger = "1";
