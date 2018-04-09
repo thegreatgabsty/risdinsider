@@ -49,6 +49,9 @@ body {
 				#Grocery_shopping_page li.active {
 					color:#FF2F6D;
 				}
+#Making_page li.active {
+	color: #BAE800;
+}
 
 .category1 {
 	position: absolute;
@@ -172,4 +175,8 @@ h1 {
 	width:50%;
 	overflow-y:scroll;
 	height:80%;
+}
+
+#Buy_Materials_page {
+	width:20%;
 }
