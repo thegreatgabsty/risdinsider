@@ -155,6 +155,30 @@
 
 
 
+	//Category4 Cool streets buttons
+	var Thayer = document.getElementById('Thayer');
+	var Wickenden = document.getElementById('Wickenden');
+	var Atwells_and_Federal_Hills = document.getElementById('Atwells_and_Federal_Hills');
+	var The_Mall = document.getElementById('The_Mall');
+	var Downtown_Providence = document.getElementById('Downtown_Providence');
+
+	//Category4 Cool streets buttons array
+	var category4_Cool_streets_button = [Thayer, Wickenden, Atwells_and_Federal_Hills, The_Mall, Downtown_Providence];
+
+
+
+	//Category4-> Cool streets page
+	var Thayer_page = document.getElementById('Thayer_page');
+	var Wickenden_page = document.getElementById('Wickenden_page');
+	var Atwells_and_Federal_Hills_page = document.getElementById('Atwells_and_Federal_Hills_page');
+	var The_Mall_page = document.getElementById('The_Mall_page');
+	var Downtown_Providence_page = document.getElementById('Downtown_Providence_page');
+
+	//Category4-> Cool streets page array
+	var category4_Cool_streets_button = [Thayer_page, Wickenden_page, Atwells_and_Federal_Hills_page, The_Mall_page, Downtown_Providence_page];
+
+
+
 
 
 
@@ -174,6 +198,66 @@
 
 	//Category3->4 Housing page array
 	var category3_Housing_page = [On_campus_page, Off_campus_page, Laundry_page];
+
+
+
+
+	//Category4 On campus buttons
+	var fifteen_west = document.getElementById('15_west');
+	var Colonial = document.getElementById('Colonial');
+	var Quad = document.getElementById('Quad');
+	var Charles_landing = document.getElementById('Charles_landing');
+	var Room_set_up_options = document.getElementById('Room_set_up_options');
+
+	//Category4 On campus buttons array
+	var category3_On_campus_button = [fifteen_west,Colonial,Quad,Charles_landing,Room_set_up_options];
+
+
+	//Category4->5 On campus page
+	var fifteen_west_page = document.getElementById('15_west_page');
+	var Colonial_page = document.getElementById('Colonial_page');
+	var Quad_page = document.getElementById('Quad_page');
+	var Charles_landing_page = document.getElementById('Charles_landing_page');
+	var Room_set_up_options_page = document.getElementById('Room_set_up_options_page');
+
+	//Category4->5 On campus page array
+	var category3_On_campus_button = [fifteen_west_page,Colonial_page,Quad_page,Charles_landing_page,Room_set_up_options_page];
+
+
+
+
+	//Category4 Off campus buttons
+	var Edge_College_Hill = document.getElementById('Edge_College_Hill');
+
+	//Category4 Off campus buttons array
+	var category3_Off_campus_button = [Edge_College_Hill];
+
+
+
+	//Category4->5 Off campus page
+	var Edge_College_Hill_page = document.getElementById('Edge_College_Hill_page');
+
+	//Category4->5 Off campus page array
+	var category3_Off_campus_button = [Edge_College_Hill_page];
+
+
+
+
+	//Category4 Laundry buttons
+	var Locations = document.getElementById('Locations');
+	var Hacks = document.getElementById('Hacks');
+
+	//Category4 Laundry buttons array
+	var category3_Laundry_button = [Locations, Hacks];
+
+
+
+	//Category4->5 Laundry page
+	var Locations_page = document.getElementById('Locations_page');
+	var Hacks_page = document.getElementById('Hacks_page');
+
+	//Category4->5 Laundry page array
+	var category3_Laundry_button = [Locations_page, Hacks_page];
 
 
 
@@ -694,7 +778,7 @@
 		}
 
 	})
-
+	
 
 	// Clicking Meal plans
 	var category3_Food_b_trigger = "1";
@@ -1017,3 +1101,35 @@
 		}
 
 	})
+
+
+//Clicking Cool streets
+	
+	// Clicking Thayer
+	var category4_Cool_streets_a_trigger = "1";
+
+	category4_Cool_streets_button[0].addEventListener('click', function () {
+		if (category4_Cool_streets_a_trigger == "1") {
+			for (let i = 0; i < category4_Cool_streets_button.length; i++) {
+				category5_Cool_streets_page[i].style.visibility = "hidden";
+				category5_Cool_streets_page[i].style.left = "100%";
+				category4_Cool_streets_b_trigger = "1";
+				category4_Cool_streets_c_trigger = "1";
+				category4_Cool_streets_d_trigger = "1";
+				category4_Cool_streets_e_trigger = "1";
+				category4_Cool_streets_f_trigger = "1";
+				category4_Cool_streets_g_trigger = "1";
+			}
+			category5_Cool_streets_page[0].style.visibility = "visible";
+			category5_Cool_streets_page[0].style.left = "80%";
+
+			category4_Cool_streets_a_trigger = "2";
+
+		} else if (category4_Cool_streets_a_trigger == "2") {
+			category5_Cool_streets_page[0].style.visibility = "visible";
+			category5_Cool_streets_page[0].style.left = "100%";
+			category4_Cool_streets_a_trigger = "1";
+		}
+
+	})
+
