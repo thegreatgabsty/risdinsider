@@ -681,16 +681,21 @@
 		$(this).addClass('active');
 	})
 
-	var foodSelector = '#Food_page li';
-	$(foodSelector).on('click', function () {
-		$(foodSelector).removeClass('active');
-		$(this).addClass('active');
-	})
-	var diningHallSelector = '#Dining_halls_page li';
-	$(diningHallSelector).on('click', function () {
-		$(diningHallSelector).removeClass('active');
-		$(this).addClass('active');
-	})
+			var foodSelector = '#Food_page li';
+			$(foodSelector).on('click', function () {
+				$(foodSelector).removeClass('active');
+				$(this).addClass('active');
+			})
+					var diningHallSelector = '#Dining_halls_page li';
+					$(diningHallSelector).on('click', function () {
+						$(diningHallSelector).removeClass('active');
+						$(this).addClass('active');
+					})
+					var grocerySelector = '#Grocery_shopping_page li';
+					$(grocerySelector).on('click', function () {
+						$(grocerySelector).removeClass('active');
+						$(this).addClass('active');
+					})
 
 
 	// Clicking Housing

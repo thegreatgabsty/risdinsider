@@ -40,6 +40,9 @@ body {
 				#Dining_halls_page li.active {
 					color:#FF2F6D;
 				}
+				#Grocery_shopping_page li.active {
+					color:#FF2F6D;
+				}
 
 .category1 {
 	position: absolute;
@@ -157,6 +160,8 @@ li{
 #Met_page h1,
 #Watermark_page h1,
 #Jolly_Roger_page h1,
-#Bolt_page h1 {
+#Bolt_page h1,
+#Meal_plans_page h1,
+#Vending_machines_page h1 {
 	color: #FF2F6D;
 }
