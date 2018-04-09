@@ -167,15 +167,15 @@
 
 
 
-	//Category4-> Cool streets page
+	//Category4->5 Cool streets page
 	var Thayer_page = document.getElementById('Thayer_page');
 	var Wickenden_page = document.getElementById('Wickenden_page');
 	var Atwells_and_Federal_Hills_page = document.getElementById('Atwells_and_Federal_Hills_page');
 	var The_Mall_page = document.getElementById('The_Mall_page');
 	var Downtown_Providence_page = document.getElementById('Downtown_Providence_page');
 
-	//Category4-> Cool streets page array
-	var category4_Cool_streets_button = [Thayer_page, Wickenden_page, Atwells_and_Federal_Hills_page, The_Mall_page, Downtown_Providence_page];
+	//Category4->5 Cool streets page array
+	var category5_Cool_streets_page = [Thayer_page, Wickenden_page, Atwells_and_Federal_Hills_page, The_Mall_page, Downtown_Providence_page];
 
 
 
@@ -1122,8 +1122,6 @@
 				category4_Cool_streets_c_trigger = "1";
 				category4_Cool_streets_d_trigger = "1";
 				category4_Cool_streets_e_trigger = "1";
-				category4_Cool_streets_f_trigger = "1";
-				category4_Cool_streets_g_trigger = "1";
 			}
 			category5_Cool_streets_page[0].style.visibility = "visible";
 			category5_Cool_streets_page[0].style.left = "80%";
@@ -1134,6 +1132,114 @@
 			category5_Cool_streets_page[0].style.visibility = "visible";
 			category5_Cool_streets_page[0].style.left = "100%";
 			category4_Cool_streets_a_trigger = "1";
+		}
+
+	})
+	
+	
+	// Clicking Wickenden
+	var category4_Cool_streets_b_trigger = "1";
+
+	category4_Cool_streets_button[1].addEventListener('click', function () {
+		if (category4_Cool_streets_b_trigger == "1") {
+			for (let i = 0; i < category4_Cool_streets_button.length; i++) {
+				category5_Cool_streets_page[i].style.visibility = "hidden";
+				category5_Cool_streets_page[i].style.left = "100%";
+				category4_Cool_streets_a_trigger = "1";
+				category4_Cool_streets_c_trigger = "1";
+				category4_Cool_streets_d_trigger = "1";
+				category4_Cool_streets_e_trigger = "1";
+			}
+			category5_Cool_streets_page[1].style.visibility = "visible";
+			category5_Cool_streets_page[1].style.left = "80%";
+
+			category4_Cool_streets_b_trigger = "2";
+
+		} else if (category4_Cool_streets_b_trigger == "2") {
+			category5_Cool_streets_page[1].style.visibility = "visible";
+			category5_Cool_streets_page[1].style.left = "100%";
+			category4_Cool_streets_b_trigger = "1";
+		}
+
+	})
+	
+	
+	// Clicking Atwells and Federal Hills
+	var category4_Cool_streets_c_trigger = "1";
+
+	category4_Cool_streets_button[2].addEventListener('click', function () {
+		if (category4_Cool_streets_c_trigger == "1") {
+			for (let i = 0; i < category4_Cool_streets_button.length; i++) {
+				category5_Cool_streets_page[i].style.visibility = "hidden";
+				category5_Cool_streets_page[i].style.left = "100%";
+				category4_Cool_streets_a_trigger = "1";
+				category4_Cool_streets_b_trigger = "1";
+				category4_Cool_streets_d_trigger = "1";
+				category4_Cool_streets_e_trigger = "1";
+			}
+			category5_Cool_streets_page[2].style.visibility = "visible";
+			category5_Cool_streets_page[2].style.left = "80%";
+
+			category4_Cool_streets_c_trigger = "2";
+
+		} else if (category4_Cool_streets_c_trigger == "2") {
+			category5_Cool_streets_page[2].style.visibility = "visible";
+			category5_Cool_streets_page[2].style.left = "100%";
+			category4_Cool_streets_c_trigger = "1";
+		}
+
+	})
+	
+	
+	// Clicking The Mall
+	var category4_Cool_streets_d_trigger = "1";
+
+	category4_Cool_streets_button[3].addEventListener('click', function () {
+		if (category4_Cool_streets_d_trigger == "1") {
+			for (let i = 0; i < category4_Cool_streets_button.length; i++) {
+				category5_Cool_streets_page[i].style.visibility = "hidden";
+				category5_Cool_streets_page[i].style.left = "100%";
+				category4_Cool_streets_a_trigger = "1";
+				category4_Cool_streets_b_trigger = "1";
+				category4_Cool_streets_c_trigger = "1";
+				category4_Cool_streets_e_trigger = "1";
+			}
+			category5_Cool_streets_page[3].style.visibility = "visible";
+			category5_Cool_streets_page[3].style.left = "80%";
+
+			category4_Cool_streets_d_trigger = "2";
+
+		} else if (category4_Cool_streets_d_trigger == "2") {
+			category5_Cool_streets_page[3].style.visibility = "visible";
+			category5_Cool_streets_page[3].style.left = "100%";
+			category4_Cool_streets_d_trigger = "1";
+		}
+
+	})
+	
+	
+	// Clicking Downtown Providence
+	var category4_Cool_streets_e_trigger = "1";
+
+	category4_Cool_streets_button[4].addEventListener('click', function () {
+		if (category4_Cool_streets_e_trigger == "1") {
+			for (let i = 0; i < category4_Cool_streets_button.length; i++) {
+				category5_Cool_streets_page[i].style.visibility = "hidden";
+				category5_Cool_streets_page[i].style.left = "100%";
+				category4_Cool_streets_a_trigger = "1";
+				category4_Cool_streets_b_trigger = "1";
+				category4_Cool_streets_c_trigger = "1";
+				category4_Cool_streets_d_trigger = "1";
+			}
+			category5_Cool_streets_page[4].style.visibility = "visible";
+			category5_Cool_streets_page[4].style.left = "80%";
+
+			category4_Cool_streets_e_trigger = "2";
+
+		} else if (category4_Cool_streets_e_trigger == "2") {
+			category5_Cool_streets_page[4].style.visibility = "visible";
+			category5_Cool_streets_page[4].style.left = "100%";
+			category4_Cool_streets_e_trigger = "1";
 		}
 
 	})
