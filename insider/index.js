@@ -2,15 +2,14 @@
 	var background = document.getElementById('category1');
 
 
-	//Category1
+	//Category1 buttons
 	var Living = document.getElementById('Living');
 	var Making = document.getElementById('Making');
 	var Academics = document.getElementById('Academics');
 	var Leisure = document.getElementById('Leisure');
 
-	//Category1 button
+	//Category1 buttons array
 	var category1_button = [Living, Making, Academics, Leisure];
-
 
 
 	//Category1->2 page
@@ -24,91 +23,111 @@
 
 
 
+
+	//Category2 Living buttons
 	var Food = document.getElementById('Food');
 	var Housing = document.getElementById('Housing');
 	var Work_studies = document.getElementById('Work_studies');
 
-	var category2_Living_button_a = [Food, Housing, Work_studies];
+	//Category2 Living buttons array
+	var category2_Living_button = [Food, Housing, Work_studies];
 
 
+	//Category2->3 Living page
+	var Food_page = document.getElementById('Food_page');
+	var Housing_page = document.getElementById('Housing_page');
+	var Work_Studies_page = document.getElementById('Work_Studies_page');
+
+	//Category2->3 Living page array
+	var category3_Living_page = [Food_page, Housing_page, Work_Studies_page];
+
+
+
+
+	//Category2 Making buttons
 	var Buy_Material = document.getElementById('Buy_Material');
 	var Shops_and_labs = document.getElementById('Shops_and_labs');
 	var Equipment = document.getElementById('Equipment');
 	var Software = document.getElementById('Software');
 
-	var category2_Living_button_b = [Buy_Material, Shops_and_labs, Equipment, Software];
+	//Category2 Making buttons array
+	var category2_Making_button = [Buy_Material, Shops_and_labs, Equipment, Software];
 
 
-	var Brown_classes = document.getElementById('Brown_classes');
-	var Lib_classes = document.getElementById('Lib_classes');
-	var Concentrations = document.getElementById('Concentrations');
-
-	var category2_Living_button_c = [Brown_classes, Lib_classes, Concentrations, Galleries, Inspiration, Working_out];
-
-
-	var Galleries = document.getElementById('Galleries');
-	var Inspiration = document.getElementById('Inspiration');
-	var Working_out = document.getElementById('Working_out');
-
-	var category2_Living_button_d = [Galleries, Inspiration, Working_out];
-
-
-
-	var Food_page = document.getElementById('Food_page');
-	var Housing_page = document.getElementById('Housing_page');
-	var Work_Studies_page = document.getElementById('Work_Studies_page');
-
-	var category3_Living_page = [Food_page, Housing_page, Work_Studies_page];
-
-
+	//Category2->3 Making page
 	var Buy_Materials_page = document.getElementById('Buy_Materials_page');
 	var Shops_and_labs_page = document.getElementById('Shops_and_labs_page');
 	var Equipment_page = document.getElementById('Equipment_page');
 	var Software_Subscription_page = document.getElementById('Software_Subscription_page');
 
+	//Category2->3 Making page array
 	var category3b_page = [Buy_Materials_page, Shops_and_labs_page, Equipment_page, Software_Subscription_page];
 
 
+
+	//Category2 Academics buttons
+	var Brown_classes = document.getElementById('Brown_classes');
+	var Lib_classes = document.getElementById('Lib_classes');
+	var Concentrations = document.getElementById('Concentrations');
+
+	//Category2 Academics buttons array
+	var category2_Academics_button = [Brown_classes, Lib_classes, Concentrations, Galleries, Inspiration, Working_out];
+
+
+	//Category2->3 Academics page
 	var Brown_class_page = document.getElementById('Brown_class_page');
 	var Lib_classes_page = document.getElementById('Lib_classes_page');
 	var Concentrations_page = document.getElementById('Concentrations_page');
 
+	//Category2->3 Academics page array
 	var category3c_page = [Brown_class_page, Lib_classes_page, Concentrations_page];
 
 
+
+	//Category2 Leisure buttons
+	var Galleries = document.getElementById('Galleries');
+	var Inspiration = document.getElementById('Inspiration');
+	var Working_out = document.getElementById('Working_out');
+
+	//Category2 Leisure buttons array
+	var category2_Leisure_button = [Galleries, Inspiration, Working_out];
+
+
+	//Category2->3 Leisure page
 	var Galleries_page = document.getElementById('Galleries_page');
 	var Inspiration_page = document.getElementById('Inspiration_page');
 	var Clubs_page = document.getElementById('Clubs_page');
 	var Working_Out_page = document.getElementById('Working_Out_page');
 
+	//Category2->3 Leisure page array
 	var category3d_page = [Galleries_page, Inspiration_page, Working_Out_page];
 
 
 
+	//Category3 Food buttons
 	var Dining_halls = document.getElementById('Dining_halls');
 	var Meal_plans = document.getElementById('Meal_plans');
 	var Cool_streets = document.getElementById('Cool_streets');
 	var Vending_machines = document.getElementById('Vending_machines');
 	var Grocery_shopping = document.getElementById('Grocery_shopping');
 
+	//Category3 Food buttons array
 	var category3_Food_button = [Dining_halls, Meal_plans, Cool_streets, Vending_machines, Grocery_shopping];
 
 
-
+	//Category3->4 Food page
 	var Dining_halls_page = document.getElementById('Dining_halls_page');
-
 	var Meal_plans_page = document.getElementById('Meal_plans_page');
-
 	var Cool_streets_page = document.getElementById('Cool_streets_page');
-
 	var Vending_machines_page = document.getElementById('Vending_machines_page');
-
 	var Grocery_shopping_page = document.getElementById('Grocery_shopping_page');
 
+	//Category3->4 Food page array
 	var category4_Food_page = [Dining_halls_page, Meal_plans_page, Cool_streets_page, Vending_machines_page, Grocery_shopping_page];
 
 
 
+	//Category4 Dining_hall buttons
 	var Portfolio = document.getElementById('Portfolio');
 	var Met = document.getElementById('Met');
 	var Watermark = document.getElementById('Watermark');
@@ -117,38 +136,48 @@
 	var Carr_Haus = document.getElementById('Carr_Haus');
 	var Food_hacks = document.getElementById('Food_hacks');
 
+	//Category4 Dining_hall buttons array
 	var category4_Dining_halls_button = [Portfolio, Met, Watermark, Jolly_Roger, Bolt, Carr_Haus, Food_hacks];
 
 
+
+	//Category4->5 Dining_hall page
 	var Portfolio_page = document.getElementById('Portfolio_page');
-
 	var Met_page = document.getElementById('Met_page');
-
 	var Watermark_page = document.getElementById('Watermark_page');
-
 	var Jolly_Roger_page = document.getElementById('Jolly_Roger_page');
-
 	var Bolt_page = document.getElementById('Bolt_page');
+	var Carr_Haus_page = document.getElementById('Carr_Haus_page');
+	var Food_hacks_page = document.getElementById('Food_hacks_page');
 
-	var Carr_Haus = document.getElementById('Carr_Haus_page');
-
-	var Food_hacks = document.getElementById('Food_hacks_page');
-
-	var category5_Dining_halls_page = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page, Carr_Haus, Food_hacks];
-
+	//Category4->5 Dining_hall page array
+	var category5_Dining_halls_page = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page, Carr_Haus_page, Food_hacks_page];
 
 
 
 
 
+
+	//Category3 Housing buttons
 	var On_campus = document.getElementById('On_campus');
 	var Off_campus = document.getElementById('Off_campus');
 	var Laundry = document.getElementById('Laundry');
 
-	var category3_Housing_page = [On_campus, Off_campus, Laundry];
+	//Category3 Housing buttons array
+	var category3_Housing_button = [On_campus, Off_campus, Laundry];
+
+
+	//Category3->4 Housing page
+	var On_campus_page = document.getElementById('On_campus_page');
+	var Off_campus_page = document.getElementById('Off_campus_page');
+	var Laundry_page = document.getElementById('Laundry_page');
+
+	//Category3->4 Housing page array
+	var category3_Housing_page = [On_campus_page, Off_campus_page, Laundry_page];
 
 
 
+	//Category3 Work studies buttons
 	var Computer_labs1 = document.getElementById('Computer_labs1');
 	var Nature_labs = document.getElementById('Nature_labs');
 	var Shops = document.getElementById('Shops');
@@ -166,10 +195,34 @@
 	var RISD_Museum = document.getElementById('RISD_Museum');
 	var Library = document.getElementById('Library');
 
-	var category3_Work_Studies_page = [Computer_labs1, Nature_labs, Shops, RA, TA, Galleries, Tour_guide, Mailroom, RISD_store, Residence_Life, CSI, Dining_halls, Grounds, RISD_CE, RISD_Museum, Library];
+	//Category3 Work studies buttons array
+	var category3_Work_Studies_button = [Computer_labs1, Nature_labs, Shops, RA, TA, Galleries, Tour_guide, Mailroom, RISD_store, Residence_Life, CSI, Dining_halls, Grounds, RISD_CE, RISD_Museum, Library];
+
+
+	//Category3->4 Work studies page
+	var Computer_labs1_page = document.getElementById('Computer_labs1_page');
+	var Nature_labs_page = document.getElementById('Nature_labs_page');
+	var Shops_page = document.getElementById('Shops_page');
+	var RA_page = document.getElementById('RA_page');
+	var TA_page = document.getElementById('TA_page');
+	var Galleries_page = document.getElementById('Galleries_page');
+	var Tour_guide_page = document.getElementById('Tour_guide_page');
+	var Mailroom_page = document.getElementById('Mailroom_page');
+	var RISD_store_page = document.getElementById('RISD_store_page');
+	var Residence_Life_page = document.getElementById('Residence_Life_page');
+	var CSI_page = document.getElementById('CSI_page');
+	var Dining_Halls_page = document.getElementById('Dining_Halls_page');
+	var Grounds_page = document.getElementById('Grounds_page');
+	var RISD_CE_page = document.getElementById('RISD_CE_page');
+	var RISD_Museum_page = document.getElementById('RISD_Museum_page');
+	var Library_page = document.getElementById('Library_page');
+
+	//Category3->4 Work studies page array
+	var category3_Work_Studies_button = [Computer_labs1_page, Nature_labs_page, Shops_page, RA_page, TA_page, Galleries_page, Tour_guide_page, Mailroom_page, RISD_store_page, Residence_Life_page, CSI_page, Dining_halls_page, Grounds_page, RISD_CE_page, RISD_Museum_page, Library_page];
 
 
 
+	//Category3 Buy Materials buttons
 	var Amazon = document.getElementById('Amazon');
 	var RISD_store = document.getElementById('RISD_store');
 	var ThreeD_store = document.getElementById('3D_store');
@@ -179,10 +232,25 @@
 	var Free_and_for_sale = document.getElementById('Free_and_for_sale');
 	var Free_materials = document.getElementById('Free_materials');
 
+	//Category3 Buy Materials buttons array
 	var category3_Buy_Materials_page = [Amazon, RISD_store, ThreeD_store, Blick, Paper, Second_Life, Free_and_for_sale, Free_materials];
 
 
+	//Category3->4 Buy Materials page
+	var Amazon_page = document.getElementById('Amazon_page');
+	var RISD_store_page = document.getElementById('RISD_store_page');
+	var ThreeD_store_page = document.getElementById('3D_store_page');
+	var Blick_page = document.getElementById('Blick_page');
+	var Paper_page = document.getElementById('Paper_page');
+	var Second_Life_page = document.getElementById('2nd_Life_page');
+	var Free_and_for_sale_page = document.getElementById('Free_and_for_sale_page');
+	var Free_materials_page = document.getElementById('Free_materials_page');
 
+	//Category3->4 Buy Materials page array
+	var category3_Buy_Materials_page = [Amazon_page, RISD_store_page, ThreeD_store_page, Blick_page, Paper_page, Second_Life_page, Free_and_for_sale_page, Free_materials_page];
+
+
+	//Category3 Shops and labs buttons
 	var Laser_cutting = document.getElementById('Laser_cutting');
 	var CNC = document.getElementById('CNC');
 	var Dark_room = document.getElementById('Dark_room');
@@ -198,19 +266,52 @@
 	var Spray_Booth = document.getElementById('Spray_Booth');
 	var Light_box = document.getElementById('Light_box');
 
+	//Category3 Shops and labs buttons array
 	var category3_Shops_and_labs_page = [Laser_cutting, CNC, Dark_room, Lighting_room, Wood_working, Metal_working, Pottery, Computer_labs, Printing, ThreeD_Printing, Sewing, Virtual_Reality, Spray_Booth, Light_box];
 
 
+	//Category3->4 Shops and labs page
+	var Laser_cutting_page = document.getElementById('Laser_cutting_page');
+	var CNC_page = document.getElementById('CNC_page');
+	var Dark_room_page = document.getElementById('Dark_room_page');
+	var Lighting_room_page = document.getElementById('Lighting_room_page');
+	var Wood_working_page = document.getElementById('Wood_working_page');
+	var Metal_working_page = document.getElementById('Metal-working_page');
+	var Pottery_page = document.getElementById('Pottery_page');
+	var Computer_labs_page = document.getElementById('Computer_labs_page');
+	var Printing_page = document.getElementById('Printing_page');
+	var ThreeD_Printing_page = document.getElementById('3D_Printing_page');
+	var Sewing_page = document.getElementById('Sewing_page');
+	var Virtual_Reality_page = document.getElementById('Virtual_Reality_page');
+	var Spray_Booth_page = document.getElementById('Spray_Booth_page');
+	var Light_box_page = document.getElementById('Light_box_page');
 
+	//Category3->4 Shops and labs page array
+	var category3_Shops_and_labs_page = [Laser_cutting_page, CNC_page, Dark_room_page, Lighting_room_page, Wood_working_page, Metal_working_page, Pottery_page, Computer_labs_page, Printing_page, ThreeD_Printing_page, Sewing_page, Virtual_Reality_page, Spray_Booth_page, Light_box_page];
+
+
+	//Category3 Equipment buttons
 	var Media_Resource = document.getElementById('Media_Resource');
 	var FAV_checkout = document.getElementById('FAV_checkout');
 	var Typeshop = document.getElementById('Typeshop');
 	var Photography_Resources = document.getElementById('Photography_Resources');
 
+	//Category3 Equipment buttons array
 	var category3_Equipment_page = [Media_Resource, FAV_checkout, Typeshop, Photography_Resources];
 
 
+	//Category3->4 Equipment page
+	var Media_Resource_page = document.getElementById('Media_Resource_page');
+	var FAV_checkout_page = document.getElementById('FAV_checkout_page');
+	var Typeshop_page = document.getElementById('Typeshop_page');
+	var Photography_Resources_page = document.getElementById('Photography_Resources_page');
 
+	//Category3->4 Equipment page array
+	var category3_Equipment_page = [Media_Resource_page, FAV_checkout_page, Typeshop_page, Photography_Resources_page];
+
+
+
+	//Category3 Software & Subscription buttons
 	var Adobe_CC = document.getElementById('Adobe_CC');
 	var Microsoft = document.getElementById('Microsoft');
 	var Maya = document.getElementById('Maya');
@@ -226,7 +327,32 @@
 	var Arduino = document.getElementById('Arduino');
 	var P5JS = document.getElementById('P5JS');
 
+	//Category3 Software & Subscription buttons array
 	var category3_Software_Subscription_page = [Adobe_CC, Microsoft, Maya, Solid_Work, Invisions, NYT, Lynda, Amazon_Prime, Figma, Cinema_4d, Hologram, Processing, Arduino, P5JS];
+
+
+	//Category3->4 Software & Subscription page
+	var Adobe_CC_page = document.getElementById('Adobe_CC_page');
+	var Microsoft_page = document.getElementById('Microsoft_page');
+	var Maya_page = document.getElementById('Maya_page');
+	var Solid_Work_page = document.getElementById('Solid_Work_page');
+	var Invisions_page = document.getElementById('Invisions_page');
+	var NYT_page = document.getElementById('NYT_page');
+	var Lynda_page = document.getElementById('Lynda_page');
+	var Amazon_Prime_page = document.getElementById('Amazon_Prime_page');
+	var Figma_page = document.getElementById('Figma_page');
+	var Cinema_4d_page = document.getElementById('Cinema_4d_page');
+	var Hologram_page = document.getElementById('Hologram_page');
+	var Processing_page = document.getElementById('Processing_page');
+	var Arduino_page = document.getElementById('Arduino_page');
+	var P5JS_page = document.getElementById('P5JS_page');
+
+	//Category3->4 Software & Subscription page array
+	var category3_Software_Subscription_page = [Adobe_CC_page, Microsoft_page, Maya_page, Solid_Work_page, Invisions_page, NYT_page, Lynda_page, Amazon_Prime_page, Figma_page, Cinema_4d_page, Hologram_page, Processing_page, Arduino_page, P5JS_page];
+
+
+
+
 
 
 
@@ -279,6 +405,47 @@
 	var Brown_Recreational_Facilities = document.getElementById('Brown_Recreational_Facilities');
 
 
+
+
+
+
+
+	var category1 = [category1];
+	var category2 = [Living_page, Making_page, Academic_page, Leisure_page];
+	var category3 = [Food_page, Housing_page, Work_Studies_page, Buy_Materials_page, Shops_and_labs_page, Equipment_page, Software_Subscription_page, Brown_class_page, Lib_classes_page, Concentrations_page, Galleries_page, Inspiration_page, Clubs_page, Working_Out_page];
+	var category4 = [Dining_halls_page, Meal_plans_page, Cool_streets_page, Vending_machines_page, Grocery_shopping_page, On_campus_page, Off_campus_page, Laundry_page, Computer_labs1_page, Nature_labs_page, Shops_page, RA_page, TA_page, Galleries_page, Tour_guide_page, Mailroom_page, RISD_store_page, Residence_Life_page, CSI_page, Dining_halls_page, Grounds_page, RISD_CE_page, RISD_Museum_page, Library_page, Amazon_page, RISD_store_page, ThreeD_store_page, Blick_page, Second_Life_page, Free_and_for_sale_page, Free_materials_page, Laser_cutting_page, CNC_page, Dark_room_page, Lighting_room_page, Wood_working_page, Metal_working_page, Pottery_page, Printing_page, ThreeD_Printing_page, Sewing_page, Virtual_Reality_page, Spray_Booth_page, Light_box_page, Media_Resource_page, FAV_checkout_page, Typeshop_page, Photography_Resources_page, Adobe_CC_page, Microsoft_page, Maya_page, Solid_Work_page, Invisions_page, NYT_page, Lynda_page, Amazon_Prime_page, Figma_page, Cinema_4d_page, Hologram_page, Processing_page, Arduino_page, P5JS_page, RISD_Museum_page, Dining_halls_page];
+	//missing paperworks_page
+	//missing Computer_labs2_page 
+	//missing How_to_register_for_Brown_classes_page
+	//missing Rate_my_professor_page
+	//missing NCSS_page
+	//missing CTC_page
+	//missing Drawing_page
+	//missing HAVC_page
+	//missing HPSS_page
+	//missing LAS_page
+	//missing GD_Commons_page
+	//missing Woods_Gerry_page
+	//missing CIT_page
+	//missing Waterman_building_page
+	//missing RISD_clubs_page
+	//missing Brown_clubs_page
+	//missing RISD_Gym_page
+	//missing Brown_Recreational_Facilities_page
+	var category5 = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page];
+	//missing Carr_Haus_page
+	//missing Food_hacks_page
+	//missing Thayer_page
+	//missing Wickenden_page
+	//missing Atwells_and_Federal_Hills_page
+	//missing The_Mall_page
+	//missing Downtown_Providence_page
+
+
+
+
+
+	//INTERFACE_NAVIGATION
 
 
 
@@ -403,9 +570,9 @@
 	// Clicking Food
 	var category2_Living_trigger_a = "1";
 
-	category2_Living_button_a[0].addEventListener('click', function () {
+	category2_Living_button[0].addEventListener('click', function () {
 		if (category2_Living_trigger_a == "1") {
-			for (let i = 0; i < category2_Living_button_a.length; i++) {
+			for (let i = 0; i < category2_Living_button.length; i++) {
 				category3_Living_page[i].style.visibility = "hidden";
 				category3_Living_page[i].style.left = "100%";
 				category2_Living_trigger_b = "1";
@@ -445,9 +612,9 @@
 	// Clicking Housing
 	var category2_Living_trigger_b = "1";
 
-	category2_Living_button_a[1].addEventListener('click', function () {
+	category2_Living_button[1].addEventListener('click', function () {
 		if (category2_Living_trigger_b == "1") {
-			for (let i = 0; i < category2_Living_button_a.length; i++) {
+			for (let i = 0; i < category2_Living_button.length; i++) {
 				category3_Living_page[i].style.visibility = "hidden";
 				category3_Living_page[i].style.left = "100%";
 				category2_Living_trigger_a = "1";
@@ -470,9 +637,9 @@
 	// Clicking Work studies
 	var category2_Living_trigger_c = "1";
 
-	category2_Living_button_a[2].addEventListener('click', function () {
+	category2_Living_button[2].addEventListener('click', function () {
 		if (category2_Living_trigger_c == "1") {
-			for (let i = 0; i < category2_Living_button_a.length; i++) {
+			for (let i = 0; i < category2_Living_button.length; i++) {
 				category3_Living_page[i].style.visibility = "hidden";
 				category3_Living_page[i].style.left = "100%";
 				category2_Living_trigger_a = "1";
