@@ -284,15 +284,8 @@
 
 
 
-<<<<<<< Updated upstream
-
-
-// Clicking Living
-	var categoryc1a_trigger = "1";
-=======
 	// Clicking Living
 	var category1_trigger_a = "1";
->>>>>>> Stashed changes
 
 	category1_button[0].addEventListener('click', function () {
 		if (category1_trigger_a == "1") {
@@ -420,15 +413,8 @@
 
 			category2_Living_trigger_a = "2";
 
-<<<<<<< Updated upstream
-			// Food.style.color = "#FF2F6D";
-			// Housing.style.color = "black";
-			// Food.style.backgroundColor = "#FF2F6D";
-			// Food.style.color = "white";
-=======
 			Food.style.color = "#FF2F6D";
 			
->>>>>>> Stashed changes
 
 		} else if (category2_Living_trigger_a == "2") {
 			category3_Living_page[0].style.visibility = "visible";
@@ -437,10 +423,7 @@
 		}
 
 	})
-
-		//jquery i guess
-
-				var livingSelector = '#Living_page li';
+var livingSelector = '#Living_page li';
 				$(livingSelector).on('click', function() {
 					$(livingSelector).removeClass('active');
 					$(this).addClass('active');
@@ -469,10 +452,6 @@
 				category2_Living_trigger_a = "1";
 				category2_Living_trigger_c = "1";
 			}
-
-			// Food.style.color = "black";
-			// Housing.style.color = "#FF2F6D";
-
 			category3_Living_page[1].style.visibility = "visible";
 			category3_Living_page[1].style.left = "40%";
 
