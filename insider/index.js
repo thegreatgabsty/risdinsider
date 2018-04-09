@@ -1,26 +1,25 @@
-	
-//background
+	//background
 	var background = document.getElementById('category1');
 
 
-//Category1
+	//Category1
 	var Living = document.getElementById('Living');
 	var Making = document.getElementById('Making');
 	var Academics = document.getElementById('Academics');
 	var Leisure = document.getElementById('Leisure');
 
-//Category1 button
+	//Category1 button
 	var category1_button = [Living, Making, Academics, Leisure];
 
 
 
-//Category1->2 page
+	//Category1->2 page
 	var Living_page = document.getElementById('Living_page');
 	var Making_page = document.getElementById('Making_page');
 	var Academic_page = document.getElementById('Academic_page');
 	var Leisure_page = document.getElementById('Leisure_page');
 
-//Category1->2 page array
+	//Category1->2 page array
 	var category2_page = [Living_page, Making_page, Academic_page, Leisure_page];
 
 
@@ -110,7 +109,7 @@
 
 
 
-	var Portfolio = document.getElementById('Portflio');
+	var Portfolio = document.getElementById('Portfolio');
 	var Met = document.getElementById('Met');
 	var Watermark = document.getElementById('Watermark');
 	var Jolly_Roger = document.getElementById('Jolly_Roger');
@@ -131,7 +130,11 @@
 
 	var Bolt_page = document.getElementById('Bolt_page');
 
-	var category4_Dining_halls_page = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page];
+	var Carr_Haus = document.getElementById('Carr_Haus_page');
+
+	var Food_hacks = document.getElementById('Food_hacks_page');
+
+	var category5_Dining_halls_page = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page, Carr_Haus, Food_hacks];
 
 
 
@@ -413,8 +416,6 @@
 
 			category2_Living_trigger_a = "2";
 
-			Food.style.color = "#FF2F6D";
-			
 
 		} else if (category2_Living_trigger_a == "2") {
 			category3_Living_page[0].style.visibility = "visible";
@@ -423,22 +424,22 @@
 		}
 
 	})
-var livingSelector = '#Living_page li';
-				$(livingSelector).on('click', function() {
-					$(livingSelector).removeClass('active');
-					$(this).addClass('active');
-				})
+	var livingSelector = '#Living_page li';
+	$(livingSelector).on('click', function () {
+		$(livingSelector).removeClass('active');
+		$(this).addClass('active');
+	})
 
-						var foodSelector = '#Food_page li';
-						$(foodSelector).on('click', function() {
-							$(foodSelector).removeClass('active');
-							$(this).addClass('active');
-						})
-								var diningHallSelector = '#Dining_halls_page li';
-								$(diningHallSelector).on('click', function() {
-									$(diningHallSelector).removeClass('active');
-									$(this).addClass('active');
-								})
+	var foodSelector = '#Food_page li';
+	$(foodSelector).on('click', function () {
+		$(foodSelector).removeClass('active');
+		$(this).addClass('active');
+	})
+	var diningHallSelector = '#Dining_halls_page li';
+	$(diningHallSelector).on('click', function () {
+		$(diningHallSelector).removeClass('active');
+		$(this).addClass('active');
+	})
 
 
 	// Clicking Housing
@@ -664,7 +665,7 @@ var livingSelector = '#Living_page li';
 				category4_Dining_halls_g_trigger = "1";
 			}
 			category5_Dining_halls_page[0].style.visibility = "visible";
-			category5_Dining_halls_page[0].style.left = "60%";
+			category5_Dining_halls_page[0].style.left = "80%";
 
 			category4_Dining_halls_a_trigger = "2";
 
@@ -678,14 +679,14 @@ var livingSelector = '#Living_page li';
 
 
 	// Clicking Met
-	var category4_Dining_halls_a_trigger = "1";
+	var category4_Dining_halls_b_trigger = "1";
 
 	category4_Dining_halls_button[1].addEventListener('click', function () {
-		if (category4_Dining_halls_a_trigger == "1") {
+		if (category4_Dining_halls_b_trigger == "1") {
 			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
 				category5_Dining_halls_page[i].style.visibility = "hidden";
 				category5_Dining_halls_page[i].style.left = "100%";
-				category4_Dining_halls_b_trigger = "1";
+				category4_Dining_halls_a_trigger = "1";
 				category4_Dining_halls_c_trigger = "1";
 				category4_Dining_halls_d_trigger = "1";
 				category4_Dining_halls_e_trigger = "1";
@@ -693,53 +694,53 @@ var livingSelector = '#Living_page li';
 				category4_Dining_halls_g_trigger = "1";
 			}
 			category5_Dining_halls_page[1].style.visibility = "visible";
-			category5_Dining_halls_page[1].style.left = "60%";
+			category5_Dining_halls_page[1].style.left = "80%";
 
-			category4_Dining_halls_a_trigger = "2";
+			category4_Dining_halls_b_trigger = "2";
 
-		} else if (category4_Dining_halls_a_trigger == "2") {
+		} else if (category4_Dining_halls_b_trigger == "2") {
 			category5_Dining_halls_page[1].style.visibility = "visible";
 			category5_Dining_halls_page[1].style.left = "100%";
-			category4_Dining_halls_a_trigger = "1";
+			category4_Dining_halls_b_trigger = "1";
 		}
 
 	})
 
 
 	// Clicking Watermark
-	var category4_Dining_halls_a_trigger = "1";
+	var category4_Dining_halls_c_trigger = "1";
 
 	category4_Dining_halls_button[2].addEventListener('click', function () {
-		if (category4_Dining_halls_a_trigger == "1") {
+		if (category4_Dining_halls_c_trigger == "1") {
 			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
 				category5_Dining_halls_page[i].style.visibility = "hidden";
 				category5_Dining_halls_page[i].style.left = "100%";
+				category4_Dining_halls_a_trigger = "1";
 				category4_Dining_halls_b_trigger = "1";
-				category4_Dining_halls_c_trigger = "1";
 				category4_Dining_halls_d_trigger = "1";
 				category4_Dining_halls_e_trigger = "1";
 				category4_Dining_halls_f_trigger = "1";
 				category4_Dining_halls_g_trigger = "1";
 			}
 			category5_Dining_halls_page[2].style.visibility = "visible";
-			category5_Dining_halls_page[2].style.left = "60%";
+			category5_Dining_halls_page[2].style.left = "80%";
 
-			category4_Dining_halls_a_trigger = "2";
+			category4_Dining_halls_c_trigger = "2";
 
-		} else if (category4_Dining_halls_a_trigger == "2") {
+		} else if (category4_Dining_halls_c_trigger == "2") {
 			category5_Dining_halls_page[2].style.visibility = "visible";
 			category5_Dining_halls_page[2].style.left = "100%";
-			category4_Dining_halls_a_trigger = "1";
+			category4_Dining_halls_c_trigger = "1";
 		}
 
 	})
 
 
 	// Clicking Jolly Roger
-	var category4_Dining_halls_a_trigger = "1";
+	var category4_Dining_halls_d_trigger = "1";
 
 	category4_Dining_halls_button[3].addEventListener('click', function () {
-		if (category4_Dining_halls_a_trigger == "1") {
+		if (category4_Dining_halls_d_trigger == "1") {
 			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
 				category5_Dining_halls_page[i].style.visibility = "hidden";
 				category5_Dining_halls_page[i].style.left = "100%";
@@ -751,24 +752,24 @@ var livingSelector = '#Living_page li';
 				category4_Dining_halls_g_trigger = "1";
 			}
 			category5_Dining_halls_page[3].style.visibility = "visible";
-			category5_Dining_halls_page[3].style.left = "60%";
+			category5_Dining_halls_page[3].style.left = "80%";
 
-			category4_Dining_halls_a_trigger = "2";
+			category4_Dining_halls_d_trigger = "2";
 
 		} else if (category4_Dining_halls_a_trigger == "2") {
 			category5_Dining_halls_page[3].style.visibility = "visible";
 			category5_Dining_halls_page[3].style.left = "100%";
-			category4_Dining_halls_a_trigger = "1";
+			category4_Dining_halls_d_trigger = "1";
 		}
 
 	})
 
 
 	// Clicking Bolt
-	var category4_Dining_halls_a_trigger = "1";
+	var category4_Dining_halls_e_trigger = "1";
 
 	category4_Dining_halls_button[4].addEventListener('click', function () {
-		if (category4_Dining_halls_a_trigger == "1") {
+		if (category4_Dining_halls_e_trigger == "1") {
 			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
 				category5_Dining_halls_page[i].style.visibility = "hidden";
 				category5_Dining_halls_page[i].style.left = "100%";
@@ -780,24 +781,24 @@ var livingSelector = '#Living_page li';
 				category4_Dining_halls_g_trigger = "1";
 			}
 			category5_Dining_halls_page[4].style.visibility = "visible";
-			category5_Dining_halls_page[4].style.left = "60%";
+			category5_Dining_halls_page[4].style.left = "80%";
 
-			category4_Dining_halls_a_trigger = "2";
+			category4_Dining_halls_e_trigger = "2";
 
-		} else if (category4_Dining_halls_a_trigger == "2") {
+		} else if (category4_Dining_halls_e_trigger == "2") {
 			category5_Dining_halls_page[4].style.visibility = "visible";
 			category5_Dining_halls_page[4].style.left = "100%";
-			category4_Dining_halls_a_trigger = "1";
+			category4_Dining_halls_e_trigger = "1";
 		}
 
 	})
 
 
 	// Clicking Carr Haus
-	var category4_Dining_halls_a_trigger = "1";
+	var category4_Dining_halls_f_trigger = "1";
 
 	category4_Dining_halls_button[5].addEventListener('click', function () {
-		if (category4_Dining_halls_a_trigger == "1") {
+		if (category4_Dining_halls_f_trigger == "1") {
 			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
 				category5_Dining_halls_page[i].style.visibility = "hidden";
 				category5_Dining_halls_page[i].style.left = "100%";
@@ -809,24 +810,24 @@ var livingSelector = '#Living_page li';
 				category4_Dining_halls_g_trigger = "1";
 			}
 			category5_Dining_halls_page[5].style.visibility = "visible";
-			category5_Dining_halls_page[5].style.left = "60%";
+			category5_Dining_halls_page[5].style.left = "80%";
 
-			category4_Dining_halls_a_trigger = "2";
+			category4_Dining_halls_f_trigger = "2";
 
-		} else if (category4_Dining_halls_a_trigger == "2") {
+		} else if (category4_Dining_halls_f_trigger == "2") {
 			category5_Dining_halls_page[5].style.visibility = "visible";
 			category5_Dining_halls_page[5].style.left = "100%";
-			category4_Dining_halls_a_trigger = "1";
+			category4_Dining_halls_f_trigger = "1";
 		}
 
 	})
 
 
 	// Clicking Food hacks
-	var category4_Dining_halls_a_trigger = "1";
+	var category4_Dining_halls_g_trigger = "1";
 
 	category4_Dining_halls_button[6].addEventListener('click', function () {
-		if (category4_Dining_halls_a_trigger == "1") {
+		if (category4_Dining_halls_g_trigger == "1") {
 			for (let i = 0; i < category4_Dining_halls_button.length; i++) {
 				category5_Dining_halls_page[i].style.visibility = "hidden";
 				category5_Dining_halls_page[i].style.left = "100%";
@@ -838,14 +839,14 @@ var livingSelector = '#Living_page li';
 				category4_Dining_halls_f_trigger = "1";
 			}
 			category5_Dining_halls_page[6].style.visibility = "visible";
-			category5_Dining_halls_page[6].style.left = "60%";
+			category5_Dining_halls_page[6].style.left = "80%";
 
-			category4_Dining_halls_a_trigger = "2";
+			category4_Dining_halls_g_trigger = "2";
 
-		} else if (category4_Dining_halls_a_trigger == "2") {
+		} else if (category4_Dining_halls_g_trigger == "2") {
 			category5_Dining_halls_page[6].style.visibility = "visible";
 			category5_Dining_halls_page[6].style.left = "100%";
-			category4_Dining_halls_a_trigger = "1";
+			category4_Dining_halls_g_trigger = "1";
 		}
 
 	})
