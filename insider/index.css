@@ -8,10 +8,38 @@ body {
 }
 
 .title {
+	display:flex;
+	flex-direction:row;
+	/* border-style:solid; */
+}
+#description {
+	margin:30px 0px 0px 50px;
+}
+
+.title h1 {
 	font-family: 'Karla', sans-serif;
 	font-size:30px;
-	padding:2% 0% 0% 2%;
+	padding:0% 0% 0% 2%;
+	/* border-style:solid; */
 }
+.title p {
+	font-family: 'Karla', sans-serif;
+	font-size:16px;
+	padding:0% 0% 0% 2%;
+	/* border-style:solid; */
+}
+
+/* !!! jquery selectors !!! */
+
+#Living_page li.active {
+	color:#FF2F6D;
+}
+		#Food_page li.active {
+			color:#FF2F6D;
+		}
+				#Dining_halls_page li.active {
+					color:#FF2F6D;
+				}
 
 .category1 {
 	position: absolute;
@@ -24,7 +52,7 @@ body {
 }
 		#category1-items {
 			text-align:center;
-			margin:5% 0% 0% 0%;
+			margin:3% 0% 0% 0%;
 		}
 
 		.category1-icons {
@@ -32,15 +60,21 @@ body {
 			height:auto;
 		}
 
-				#living {
-					margin-bottom:2%;
+				#living_text {
+					margin:10px 0px 40px 0px;
 			
 				}
-				#making {
-					margin-bottom:2%;
+				#making_text {
+					margin:10px 0px 40px 0px;
 				}
-				#academics {
-					margin-bottom:2%;
+				#academics_text {
+					margin:10px 0px 40px 0px;
+				}
+				#leisure_text {
+					margin:10px 0px 40px 0px;
+				}
+				#cute_manifesto {
+					margin-top:75px;
 				}
 
 
