@@ -386,6 +386,8 @@
 
 			categoryc2_Living_trigger_a = "2";
 
+			Food.style.color = "#FF2F6D";
+
 		} else if (categoryc2_Living_trigger_a == "2") {
 			category3_Living_page[0].style.visibility = "visible";
 			category3_Living_page[0].style.left = "100%";
@@ -566,6 +568,8 @@
 
 		category3_Food_button[4].addEventListener('click', function () {
 			if (category3_Food_e_trigger == "1") {
+
+
 				for (let i = 0; i < category3_Food_button.length; i++) {
 					category4_Food_page[i].style.visibility = "hidden";
 					category4_Food_page[i].style.left = "100%";
