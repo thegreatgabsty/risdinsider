@@ -98,7 +98,7 @@ body {
 	transition-duration: 0.2s;
 	margin:8% 0% 0% 0%;
 	line-height:1.5;
-	overflow-x: scroll;
+	overflow-y: scroll;
 }
 
 .category5 {
