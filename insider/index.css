@@ -93,10 +93,10 @@ body {
 
 .category5 {
 	position: absolute;
-	background-color: rgba(255, 255, 0, 0.05);
-	width: 100%;
+	width: 15%;
 	height: 100%;
 	transition-duration: 0.2s;
+	margin:8% 0% 0% 0%;
 	
 }
 
@@ -133,4 +133,18 @@ li{
 	list-style-type: none;
 	cursor: pointer;
 	width:150px;
+}
+.category5 h1 {
+	font-family: 'Karla', sans-serif;
+}
+.category5 p {
+	font-family: 'Karla', sans-serif;
+	line-height:1.5;
+}
+
+#Portfolio_page h1,
+#Met_page h1,
+#Watermark_page h1,
+#Jolly_Roger_page h1 {
+	color: #FF2F6D;
 }
