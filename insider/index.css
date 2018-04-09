@@ -7,6 +7,12 @@ body {
 	
 }
 
+#logo {
+	width:5%;
+	height:10%;
+	margin:1% 4% 0px 6%;
+}
+
 .title {
 	display:flex;
 	flex-direction:row;
@@ -16,7 +22,7 @@ body {
 	margin:30px 0px 0px 50px;
 }
 
-.title h1 {
+.title h2 {
 	font-family: 'Karla', sans-serif;
 	font-size:30px;
 	padding:0% 0% 0% 2%;
@@ -146,22 +152,24 @@ li{
 	cursor: pointer;
 	width:150px;
 }
-.category5 h1,
+/* .category5 h1,
 .category4 h1 {
 	font-family: 'Karla', sans-serif;
-}
+} */
+.category3 p,
 .category5 p,
 .category4 p {
 	font-family: 'Karla', sans-serif;
 	line-height:1.5;
 }
 
-#Portfolio_page h1,
-#Met_page h1,
-#Watermark_page h1,
-#Jolly_Roger_page h1,
-#Bolt_page h1,
-#Meal_plans_page h1,
-#Vending_machines_page h1 {
+h1 {
+	font-family: 'Karla', sans-serif;
 	color: #FF2F6D;
+}
+
+#Work_Studies_page {
+	width:50%;
+	overflow-y:scroll;
+	height:80%;
 }
