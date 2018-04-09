@@ -228,7 +228,7 @@
 	var Room_set_up_options = document.getElementById('Room_set_up_options');
 
 	//Category4 On campus buttons array
-	var category4_On_campus_button = [fifteen_west,Colonial,Quad,Charles_landing,Room_set_up_options];
+	var category4_On_campus_button = [fifteen_west, Colonial, Quad, Charles_landing, Room_set_up_options];
 
 
 	//Category4->5 On campus page
@@ -239,7 +239,7 @@
 	var Room_set_up_options_page = document.getElementById('Room_set_up_options_page');
 
 	//Category4->5 On campus page array
-	var category5_On_campus_page = [fifteen_west_page,Colonial_page,Quad_page,Charles_landing_page,Room_set_up_options_page];
+	var category5_On_campus_page = [fifteen_west_page, Colonial_page, Quad_page, Charles_landing_page, Room_set_up_options_page];
 
 
 
@@ -515,7 +515,7 @@
 	var category1 = [category1];
 	var category2 = [Living_page, Making_page, Academic_page, Leisure_page];
 	var category3 = [Food_page, Housing_page, Work_Studies_page, Buy_Materials_page, Shops_and_labs_page, Equipment_page, Software_Subscription_page, Brown_class_page, Lib_classes_page, Concentrations_page, Galleries_page, Inspiration_page, Clubs_page, Working_Out_page];
-	var category4 = [Dining_halls_page, Meal_plans_page, Cool_streets_page, Vending_machines_page, Grocery_shopping_page, On_campus_page, Off_campus_page, Laundry_page, Computer_labs1_page, Nature_labs_page, Shops_page, RA_page, TA_page, Galleries_page, Tour_guide_page, Mailroom_page, RISD_store_page, Residence_Life_page, CSI_page, Dining_halls_page, Grounds_page, RISD_CE_page, RISD_Museum_page, Library_page, Amazon_page, RISD_store_page, ThreeD_store_page, Blick_page, Second_Life_page, Free_and_for_sale_page, Free_materials_page, Laser_cutting_page, CNC_page, Dark_room_page, Lighting_room_page, Wood_working_page, Metal_working_page, Pottery_page, Printing_page, ThreeD_Printing_page, Sewing_page, Virtual_Reality_page, Spray_Booth_page, Light_box_page, Media_Resource_page, FAV_checkout_page, Typeshop_page, Photography_Resources_page, Adobe_CC_page, Microsoft_page, Maya_page, Solid_Work_page, Invisions_page, NYT_page, Lynda_page, Amazon_Prime_page, Figma_page, Cinema_4d_page, Hologram_page, Processing_page, Arduino_page, P5JS_page, RISD_Museum_page, Dining_halls_page];
+	var category4 = [Dining_halls_page, Meal_plans_page, Cool_streets_page, Vending_machines_page, Grocery_shopping_page, On_campus_page, Off_campus_page, Laundry_page];
 	//missing paperworks_page
 	//missing Computer_labs2_page 
 	//missing How_to_register_for_Brown_classes_page
@@ -534,14 +534,7 @@
 	//missing Brown_clubs_page
 	//missing RISD_Gym_page
 	//missing Brown_Recreational_Facilities_page
-	var category5 = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page];
-	//missing Carr_Haus_page
-	//missing Food_hacks_page
-	//missing Thayer_page
-	//missing Wickenden_page
-	//missing Atwells_and_Federal_Hills_page
-	//missing The_Mall_page
-	//missing Downtown_Providence_page
+	var category5 = [Portfolio_page, Met_page, Watermark_page, Jolly_Roger_page, Bolt_page, Carr_Haus_page, Food_hacks_page, Thayer_page, Wickenden_page, Atwells_and_Federal_Hills_page, The_Mall_page, Downtown_Providence_page, Edge_College_Hill_page, Fresh_Vegetables_page, Grocery_stores_page, fifteen_west_page, Colonial_page, Quad_page, Charles_landing_page, Room_set_up_options_page];
 
 
 
@@ -568,12 +561,44 @@
 				category1_trigger_c = "1";
 				category1_trigger_d = "1";
 			}
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[0].style.visibility = "visible";
 			category2_page[0].style.left = "20%";
 			category1_trigger_a = "2";
 
 			background.style.backgroundColor = "#FF2F6D"
 		} else if (category1_trigger_a == "2") {
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[0].style.visibility = "visible";
 			category2_page[0].style.left = "100%";
 			category1_trigger_a = "1";
@@ -594,12 +619,44 @@
 				category1_trigger_c = "1";
 				category1_trigger_d = "1";
 			}
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[1].style.visibility = "visible";
 			category2_page[1].style.left = "20%";
 			category1_trigger_b = "2";
 
 			background.style.backgroundColor = "#BAE800"
 		} else if (category1_trigger_b == "2") {
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[1].style.visibility = "visible";
 			category2_page[1].style.left = "100%";
 			category1_trigger_b = "1";
@@ -620,12 +677,44 @@
 				category1_trigger_b = "1";
 				category1_trigger_d = "1";
 			}
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[2].style.visibility = "visible";
 			category2_page[2].style.left = "20%";
 			category1_trigger_c = "2";
 
 			background.style.backgroundColor = "#FFB800"
 		} else if (category1_trigger_c == "2") {
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[2].style.visibility = "visible";
 			category2_page[2].style.left = "100%";
 			category1_trigger_c = "1";
@@ -646,12 +735,44 @@
 				category1_trigger_b = "1";
 				category1_trigger_c = "1";
 			}
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[3].style.visibility = "visible";
 			category2_page[3].style.left = "20%";
 			category1_trigger_d = "2";
 
 			background.style.backgroundColor = "#38E0D6"
 		} else if (category1_trigger_d == "2") {
+			for (let i = 0; i < category2.length; i++) {
+				category2[i].style.visibility = "hidden";
+				category2[i].style.left = "100%";
+			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category2_page[3].style.visibility = "visible";
 			category2_page[3].style.left = "100%";
 			category1_trigger_d = "1";
@@ -680,6 +801,18 @@
 				category2_Living_trigger_b = "1";
 				category2_Living_trigger_c = "1";
 			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category3_Living_page[0].style.visibility = "visible";
 			category3_Living_page[0].style.left = "40%";
 
@@ -687,6 +820,18 @@
 
 
 		} else if (category2_Living_trigger_a == "2") {
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category3_Living_page[0].style.visibility = "visible";
 			category3_Living_page[0].style.left = "100%";
 			category2_Living_trigger_a = "1";
@@ -699,21 +844,21 @@
 		$(this).addClass('active');
 	})
 
-			var foodSelector = '#Food_page li';
-			$(foodSelector).on('click', function () {
-				$(foodSelector).removeClass('active');
-				$(this).addClass('active');
-			})
-					var diningHallSelector = '#Dining_halls_page li';
-					$(diningHallSelector).on('click', function () {
-						$(diningHallSelector).removeClass('active');
-						$(this).addClass('active');
-					})
-					var grocerySelector = '#Grocery_shopping_page li';
-					$(grocerySelector).on('click', function () {
-						$(grocerySelector).removeClass('active');
-						$(this).addClass('active');
-					})
+	var foodSelector = '#Food_page li';
+	$(foodSelector).on('click', function () {
+		$(foodSelector).removeClass('active');
+		$(this).addClass('active');
+	})
+	var diningHallSelector = '#Dining_halls_page li';
+	$(diningHallSelector).on('click', function () {
+		$(diningHallSelector).removeClass('active');
+		$(this).addClass('active');
+	})
+	var grocerySelector = '#Grocery_shopping_page li';
+	$(grocerySelector).on('click', function () {
+		$(grocerySelector).removeClass('active');
+		$(this).addClass('active');
+	})
 
 
 	// Clicking Housing
@@ -727,12 +872,36 @@
 				category2_Living_trigger_a = "1";
 				category2_Living_trigger_c = "1";
 			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category3_Living_page[1].style.visibility = "visible";
 			category3_Living_page[1].style.left = "40%";
 
 			category2_Living_trigger_b = "2";
 
 		} else if (category2_Living_trigger_b == "2") {
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category3_Living_page[1].style.visibility = "visible";
 			category3_Living_page[1].style.left = "100%";
 			category2_Living_trigger_b = "1";
@@ -752,12 +921,36 @@
 				category2_Living_trigger_a = "1";
 				category2_Living_trigger_b = "1";
 			}
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category3_Living_page[2].style.visibility = "visible";
 			category3_Living_page[2].style.left = "40%";
 
 			category2_Living_trigger_c = "2";
 
 		} else if (category2_Living_trigger_c == "2") {
+			for (let i = 0; i < category3.length; i++) {
+				category3[i].style.visibility = "hidden";
+				category3[i].style.left = "100%";
+			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category3_Living_page[2].style.visibility = "visible";
 			category3_Living_page[2].style.left = "100%";
 			category2_Living_trigger_c = "1";
@@ -789,19 +982,35 @@
 				category3_Food_d_trigger = "1";
 				category3_Food_e_trigger = "1";
 			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[0].style.visibility = "visible";
 			category4_Food_page[0].style.left = "60%";
 
 			category3_Food_a_trigger = "2";
 
 		} else if (category3_Food_a_trigger == "2") {
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[0].style.visibility = "visible";
 			category4_Food_page[0].style.left = "100%";
 			category3_Food_a_trigger = "1";
 		}
 
 	})
-	
+
 
 	// Clicking Meal plans
 	var category3_Food_b_trigger = "1";
@@ -816,12 +1025,28 @@
 				category3_Food_d_trigger = "1";
 				category3_Food_e_trigger = "1";
 			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[1].style.visibility = "visible";
 			category4_Food_page[1].style.left = "60%";
 
 			category3_Food_b_trigger = "2";
 
 		} else if (category3_Food_b_trigger == "2") {
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[1].style.visibility = "visible";
 			category4_Food_page[1].style.left = "100%";
 			category3_Food_b_trigger = "1";
@@ -843,12 +1068,28 @@
 				category3_Food_d_trigger = "1";
 				category3_Food_e_trigger = "1";
 			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[2].style.visibility = "visible";
 			category4_Food_page[2].style.left = "60%";
 
 			category3_Food_c_trigger = "2";
 
 		} else if (category3_Food_c_trigger == "2") {
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[2].style.visibility = "visible";
 			category4_Food_page[2].style.left = "100%";
 			category3_Food_c_trigger = "1";
@@ -870,12 +1111,28 @@
 				category3_Food_c_trigger = "1";
 				category3_Food_e_trigger = "1";
 			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[3].style.visibility = "visible";
 			category4_Food_page[3].style.left = "60%";
 
 			category3_Food_d_trigger = "2";
 
 		} else if (category3_Food_d_trigger == "2") {
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[3].style.visibility = "visible";
 			category4_Food_page[3].style.left = "100%";
 			category3_Food_d_trigger = "1";
@@ -899,12 +1156,28 @@
 				category3_Food_c_trigger = "1";
 				category3_Food_d_trigger = "1";
 			}
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[4].style.visibility = "visible";
 			category4_Food_page[4].style.left = "60%";
 
 			category3_Food_e_trigger = "2";
 
 		} else if (category3_Food_e_trigger == "2") {
+			for (let i = 0; i < category4.length; i++) {
+				category4[i].style.visibility = "hidden";
+				category4[i].style.left = "100%";
+			}
+			for (let i = 0; i < category5.length; i++) {
+				category5[i].style.visibility = "hidden";
+				category5[i].style.left = "100%";
+			}
 			category4_Food_page[4].style.visibility = "visible";
 			category4_Food_page[4].style.left = "100%";
 			category3_Food_e_trigger = "1";
@@ -1126,8 +1399,8 @@
 	})
 
 
-//Clicking Cool streets
-	
+	//Clicking Cool streets
+
 	// Cool streets - Thayer
 	var category4_Cool_streets_a_trigger = "1";
 
@@ -1153,8 +1426,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Cool streets - Wickenden
 	var category4_Cool_streets_b_trigger = "1";
 
@@ -1180,8 +1453,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Cool streets - Atwells and Federal Hills
 	var category4_Cool_streets_c_trigger = "1";
 
@@ -1207,8 +1480,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Cool streets - The Mall
 	var category4_Cool_streets_d_trigger = "1";
 
@@ -1234,8 +1507,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Cool streets - Downtown Providence
 	var category4_Cool_streets_e_trigger = "1";
 
@@ -1263,8 +1536,8 @@
 	})
 
 
-//Clicking Grocery shopping
-	
+	//Clicking Grocery shopping
+
 	// Grocery shopping - Fresh Vegetables
 	var category4_Grocery_stores_a_trigger = "1";
 
@@ -1287,8 +1560,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Grocery shopping - Grocery stores
 	var category4_Grocery_stores_b_trigger = "1";
 
@@ -1313,8 +1586,8 @@
 	})
 
 
-//Clicking Housing
-	
+	//Clicking Housing
+
 	// Housing - On campus
 	var category3_Housing_a_trigger = "1";
 
@@ -1338,8 +1611,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Housing - Off campus
 	var category3_Housing_b_trigger = "1";
 
@@ -1363,8 +1636,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Housing - Laundry
 	var category3_Housing_c_trigger = "1";
 
@@ -1390,8 +1663,8 @@
 	})
 
 
-//Clicking On campus
-	
+	//Clicking On campus
+
 	// On campus - 15 west
 	var category4_On_campus_a_trigger = "1";
 
@@ -1417,8 +1690,8 @@
 		}
 
 	})
-	
-	
+
+
 	// On campus - Colonial
 	var category4_On_campus_b_trigger = "1";
 
@@ -1444,8 +1717,8 @@
 		}
 
 	})
-	
-	
+
+
 	// On campus - Quad
 	var category4_On_campus_c_trigger = "1";
 
@@ -1471,8 +1744,8 @@
 		}
 
 	})
-	
-	
+
+
 	// On campus - Charles landing
 	var category4_On_campus_d_trigger = "1";
 
@@ -1498,8 +1771,8 @@
 		}
 
 	})
-	
-	
+
+
 	// On campus - Room set up options
 	var category4_On_campus_e_trigger = "1";
 
@@ -1527,8 +1800,8 @@
 	})
 
 
-//Clicking Off campus
-	
+	//Clicking Off campus
+
 	// Off campus - Edge College Hill
 	var category4_Off_campus_a_trigger = "1";
 
@@ -1553,8 +1826,8 @@
 	})
 
 
-//Clicking Laundry
-	
+	//Clicking Laundry
+
 	// Laundry - Locations
 	var category4_Laundry_a_trigger = "1";
 
@@ -1577,8 +1850,8 @@
 		}
 
 	})
-	
-	
+
+
 	// Laundry - Hacks
 	var category4_Laundry_b_trigger = "1";
 
@@ -1601,4 +1874,3 @@
 		}
 
 	})
-
