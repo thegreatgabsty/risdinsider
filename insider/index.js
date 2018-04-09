@@ -974,8 +974,9 @@
 			for (let i = 0; i < category2_Making_button.length; i++) {
 				category3b_page[i].style.visibility = "hidden";
 				category3b_page[i].style.left = "100%";
-				// category2_Making_trigger_a = "1";
-				// category2_Making_trigger_b = "1";
+				 category2_Making_trigger_b = "1";
+				 category2_Making_trigger_c = "1";
+				 category2_Making_trigger_d = "1";
 			}
 			for (let i = 0; i < category3.length; i++) {
 				category3[i].style.visibility = "hidden";
@@ -1026,8 +1027,9 @@
 			for (let i = 0; i < category2_Making_button.length; i++) {
 				category3b_page[i].style.visibility = "hidden";
 				category3b_page[i].style.left = "100%";
-				// category2_Making_trigger_a = "1";
-				// category2_Making_trigger_b = "1";
+				 category2_Making_trigger_a = "1";
+				 category2_Making_trigger_c = "1";
+				 category2_Making_trigger_d = "1";
 			}
 			for (let i = 0; i < category3.length; i++) {
 				category3[i].style.visibility = "hidden";
@@ -1077,8 +1079,9 @@
 			for (let i = 0; i < category2_Making_button.length; i++) {
 				category3b_page[i].style.visibility = "hidden";
 				category3b_page[i].style.left = "100%";
-				// category2_Making_trigger_a = "1";
-				// category2_Making_trigger_b = "1";
+				 category2_Making_trigger_a = "1";
+				 category2_Making_trigger_b = "1";
+				 category2_Making_trigger_d = "1";
 			}
 			for (let i = 0; i < category3.length; i++) {
 				category3[i].style.visibility = "hidden";
@@ -1128,8 +1131,9 @@
 			for (let i = 0; i < category2_Making_button.length; i++) {
 				category3b_page[i].style.visibility = "hidden";
 				category3b_page[i].style.left = "100%";
-				// category2_Making_trigger_a = "1";
-				// category2_Making_trigger_b = "1";
+				 category2_Making_trigger_a = "1";
+				 category2_Making_trigger_b = "1";
+				 category2_Making_trigger_c = "1";
 			}
 			for (let i = 0; i < category3.length; i++) {
 				category3[i].style.visibility = "hidden";
